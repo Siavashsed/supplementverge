@@ -1,0 +1,10 @@
+title: Supplement Verge
+description: Science-first supplement reviews and guides
+theme: minima
+baseurl: ""
+url: "https://supplementverge.io"
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+show_excerpts: true
+minima:
+  skin: dark
