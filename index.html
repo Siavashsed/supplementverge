@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Supplement Verge — What the Research Actually Says</title>
+<meta name="description" content="Supplement reviews and nutrition science graded by human clinical evidence. No marketing claims, no sponsored opinions.">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{  --bg:#060a07;--bg2:#0c1009;--sur:#121810;
+  --pri:#84cc16;--pri2:#65a30d;
+  --txt:#eef8e0;--mut:#7a9860;--brd:#1a2814;
+  --fh:system-ui,sans-serif;--fb:system-ui,sans-serif;--fm:monospace;}
+body{font-family:var(--fb);background:var(--bg);color:var(--txt);font-size:15px;line-height:1.7;min-height:100vh}
+a{color:var(--pri);text-decoration:none}a:hover{opacity:.8}
+.stk-bar{display:flex;align-items:center;justify-content:space-between;padding:16px 48px;border-bottom:1px solid var(--brd);background:var(--bg);position:sticky;top:0;z-index:99;backdrop-filter:blur(10px)}
+.stk-brand{font-size:18px;font-weight:800;color:var(--txt);letter-spacing:-0.5px;text-decoration:none}
+.stk-brand span{color:var(--pri)}
+.stk-bar-nav{display:flex;gap:28px}.stk-bar-nav a{font-size:13px;color:var(--mut);transition:color .2s}.stk-bar-nav a:hover{color:var(--txt)}
+.stk-splash{padding:80px 48px 64px;background:linear-gradient(160deg,var(--bg2) 0%,var(--bg) 70%);border-bottom:1px solid var(--brd)}
+.stk-splash-tag{font-size:11px;font-weight:700;color:var(--pri);text-transform:uppercase;letter-spacing:3px;margin-bottom:20px}
+.stk-splash h1{font-size:clamp(28px,4vw,52px);font-weight:800;line-height:1.1;letter-spacing:-1px;max-width:700px;margin-bottom:18px}
+.stk-splash p{font-size:16px;color:var(--mut);max-width:580px;line-height:1.8}
+.stk-shelf{padding:56px 48px;max-width:1200px;margin:0 auto}
+.stk-shelf-hd{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--mut);border-bottom:1px solid var(--brd);padding-bottom:12px;margin-bottom:28px}
+.stk-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+.stk-item{background:var(--bg2);border:1px solid var(--brd);border-radius:8px;padding:24px;display:flex;flex-direction:column;gap:10px;transition:border-color .2s,transform .15s}
+.stk-item:hover{border-color:var(--pri2);transform:translateY(-2px)}
+.stk-item-cat{font-size:10px;font-weight:700;color:var(--pri);text-transform:uppercase;letter-spacing:2px}
+.stk-item h2{font-size:17px;font-weight:700;line-height:1.35;color:var(--txt)}
+.stk-item p{font-size:13px;color:var(--mut);line-height:1.75;flex:1}
+.stk-item-meta{font-size:11px;color:var(--mut);display:flex;justify-content:space-between}
+.stk-item-read{font-size:12px;font-weight:600;color:var(--pri)}
+.stk-letter{background:var(--sur);border-top:1px solid var(--brd);border-bottom:1px solid var(--brd);padding:72px 48px;text-align:center}
+.stk-letter h2{font-size:clamp(22px,3vw,34px);font-weight:800;margin-bottom:12px}
+.stk-letter p{color:var(--mut);font-size:15px;margin-bottom:28px;max-width:500px;margin-left:auto;margin-right:auto}
+.stk-letter-form{display:flex;gap:10px;max-width:440px;margin:0 auto}
+.stk-letter-input{flex:1;background:var(--bg);border:1px solid var(--brd);border-radius:6px;padding:11px 16px;color:var(--txt);font-size:14px;outline:none;transition:border-color .2s}
+.stk-letter-input:focus{border-color:var(--pri)}.stk-letter-input::placeholder{color:var(--mut)}
+.stk-letter-btn{background:var(--pri);color:#000;border:none;border-radius:6px;padding:11px 22px;font-size:14px;font-weight:700;cursor:pointer;white-space:nowrap;transition:background .2s}
+.stk-letter-btn:hover{background:var(--pri2)}
+.stk-letter-ok{color:var(--pri);font-size:15px;font-weight:600;padding:8px}
+.stk-base{padding:28px 48px;border-top:1px solid var(--brd);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.stk-base-copy{font-size:12px;color:var(--mut)}
+.stk-base-links{display:flex;gap:20px}.stk-base-links a{font-size:12px;color:var(--mut)}
+@media(max-width:700px){.stk-bar{padding:12px 16px}.stk-splash{padding:48px 16px 40px}.stk-shelf{padding:40px 16px}.stk-letter{padding:48px 16px}.stk-letter-form{flex-direction:column}.stk-base{padding:20px 16px;flex-direction:column;text-align:center}}
+</style>
+</head>
+<body>
+<div class="stk-bar">
+  <a href="/" class="stk-brand">Supplement<span> Verge</span></a>
+  <nav class="stk-bar-nav"><a href="/">Home</a><a href="/about.html">About</a></nav>
+</div>
+<div class="stk-splash">
+  <div class="stk-splash-tag">Supplement Science</div>
+  <h1>What the Research Actually Says</h1>
+  <p>Supplement reviews and nutrition science graded by human clinical evidence. No marketing claims, no sponsored opinions.</p>
+</div>
+<div class="stk-shelf">
+  <div class="stk-shelf-hd">Latest Articles</div>
+  <div class="stk-grid" id="stk-grid"></div>
+</div>
+<div class="stk-letter">
+  <h2>The Evidence Brief</h2>
+  <p>Monthly supplement science roundup — what the trials actually showed.</p>
+  <form id="stk-nl" onsubmit="nlSub(event)">
+    <div class="stk-letter-form">
+      <input type="email" class="stk-letter-input" placeholder="your@email.com" required>
+      <button type="submit" class="stk-letter-btn">Subscribe</button>
+    </div>
+  </form>
+</div>
+<div class="stk-base">
+  <span class="stk-base-copy">© Supplement Verge — by Dr. James Holloway</span>
+  <div class="stk-base-links"><a href="/">Home</a><a href="/about.html">About</a></div>
+</div>
+<script>
+async function loadPosts(){
+  const el=document.getElementById('stk-grid');
+  try{
+    const r=await fetch('./articles.json');if(!r.ok)throw 0;
+    const posts=await r.json();if(!posts.length)throw 0;
+    el.innerHTML=posts.slice(0,9).map(p=>`<div class="stk-item">
+      <div class="stk-item-cat">Supplement Science</div>
+      <h2>${p.title}</h2>
+      <p>${p.meta_description||''}</p>
+      <div class="stk-item-meta"><span>${p.date_iso||''}</span><a class="stk-item-read" href="./${p.slug||'#'}">Read →</a></div>
+    </div>`).join('');
+  }catch(e){
+    el.innerHTML='<div class="stk-item"><div class="stk-item-cat">Coming Soon</div><h2>Articles publishing shortly</h2><p>The content system is warming up. Check back soon.</p></div>';
+  }
+}
+function nlSub(e){e.preventDefault();document.getElementById('stk-nl').innerHTML='<div class="stk-letter-ok">✓ You're in. Check your inbox.</div>';}
+loadPosts();
+</script>
+</body></html>
