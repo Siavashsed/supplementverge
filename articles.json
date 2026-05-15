@@ -11,5 +11,18 @@
       "examine.com",
       "pubmed.ncbi.nlm.nih.gov"
     ]
+  },
+  {
+    "title": "Does Pre-Workout Actually Improve Performance? A Sports Scientist Cuts Through the Hype",
+    "slug": "pre-workout-performance-evidence-reviewed",
+    "meta_description": "Sports scientist Dr. James Holloway reviews the clinical evidence on pre-workout supplements. What actually works, what's marketing fluff, and what to take.",
+    "date": "May 15, 2026",
+    "date_iso": "2026-05-15",
+    "author": "Dr. James Holloway",
+    "image": "https://images.pexels.com/photos/4720497/pexels-photo-4720497.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "bjsm.bmj.com",
+      "examine.com"
+    ]
   }
 ]
