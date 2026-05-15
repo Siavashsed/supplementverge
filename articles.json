@@ -24,5 +24,18 @@
       "bjsm.bmj.com",
       "examine.com"
     ]
+  },
+  {
+    "title": "Protein Timing: Does When You Eat Actually Matter As Much As How Much?",
+    "slug": "protein-timing-does-when-you-eat-matter",
+    "meta_description": "Sports scientist Dr. James Holloway cuts through the hype on protein timing \u2014 what the research actually says vs. what supplement brands want you to believe.",
+    "date": "May 15, 2026",
+    "date_iso": "2026-05-15",
+    "author": "Dr. James Holloway",
+    "image": "https://images.pexels.com/photos/4720498/pexels-photo-4720498.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "jissn.biomedcentral.com",
+      "pubmed.ncbi.nlm.nih.gov"
+    ]
   }
 ]
