@@ -37,5 +37,18 @@
       "jissn.biomedcentral.com",
       "pubmed.ncbi.nlm.nih.gov"
     ]
+  },
+  {
+    "title": "Vitamin D Deficiency: Why Most People Are Getting the Dose Completely Wrong",
+    "slug": "vitamin-d-deficiency-dose-wrong",
+    "meta_description": "Sports scientist Dr. James Holloway explains why standard vitamin D dosing fails most people and what the research actually says you should take.",
+    "date": "May 16, 2026",
+    "date_iso": "2026-05-16",
+    "author": "Dr. James Holloway",
+    "image": "https://images.pexels.com/photos/1458713/pexels-photo-1458713.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "examine.com",
+      "endocrine.org"
+    ]
   }
 ]
