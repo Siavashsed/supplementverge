@@ -1,0 +1,52 @@
+[
+  {
+    "id": "c1801",
+    "name": "Marcus T.",
+    "initials": "MT",
+    "color": "#ec4899",
+    "date_iso": "2026-05-16",
+    "date_display": "May 16, 2026",
+    "text": "Finally someone saying what I've been thinking. I spent $60 a month on pre-workout and honestly couldn't tell the difference once I actually tracked my lifts. The placebo effect is real though, which still counts for something I guess.",
+    "likes": 8
+  },
+  {
+    "id": "c2770",
+    "name": "Sarah K.",
+    "initials": "SK",
+    "color": "#ef4444",
+    "date_iso": "2026-05-18",
+    "date_display": "May 18, 2026",
+    "text": "Disagree with the conclusion here. I've been using caffeine + beta-alanine combo for 6 months and my deadlift went up 25 lbs. Anecdotal evidence, sure, but it's worked for me.",
+    "likes": 5
+  },
+  {
+    "id": "c3334",
+    "name": "David R.",
+    "initials": "DR",
+    "color": "#3ecf8e",
+    "date_iso": "2026-05-20",
+    "date_display": "May 20, 2026",
+    "text": "Great breakdown of the research. Wish you'd gone deeper into individual ingredients though. Seems like caffeine is the only thing actually proven, and you can get that from coffee for way cheaper.",
+    "likes": 11
+  },
+  {
+    "id": "c4648",
+    "name": "Jennifer M.",
+    "initials": "JM",
+    "color": "#ec4899",
+    "date_iso": "2026-05-24",
+    "date_display": "May 24, 2026",
+    "text": "The timing section was super helpful! I started taking mine 30 min before instead of right before the gym and actually noticed better energy. Maybe that's why so many people waste money on expensive brands.",
+    "likes": 7
+  },
+  {
+    "id": "c5217",
+    "name": "Chris L.",
+    "initials": "CL",
+    "color": "#38bdf8",
+    "date_iso": "2026-05-29",
+    "date_display": "May 29, 2026",
+    "text": "Been in the fitness industry for 12 years and this article nails it. Most gym bros don't realize their form and sleep matter 10x more than what's in their pre-workout shaker.",
+    "likes": 9
+  }
+]
