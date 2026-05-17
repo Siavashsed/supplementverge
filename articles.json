@@ -50,5 +50,18 @@
       "examine.com",
       "endocrine.org"
     ]
+  },
+  {
+    "title": "Ashwagandha for Stress: What the Human Trials Actually Found",
+    "slug": "ashwagandha-stress-human-trials",
+    "meta_description": "Dr. James Holloway reviews human clinical trials on ashwagandha for stress. What the data shows, what it doesn't, and where the marketing oversteps.",
+    "date": "May 17, 2026",
+    "date_iso": "2026-05-17",
+    "author": "Dr. James Holloway",
+    "image": "https://images.pexels.com/photos/7615456/pexels-photo-7615456.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "examine.com",
+      "pubmed.ncbi.nlm.nih.gov"
+    ]
   }
 ]
