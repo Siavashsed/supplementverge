@@ -1,154 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Supplement Verge - What the Research Actually Says</title>
-<meta name="description" content="Supplement reviews and nutrition science graded by human clinical evidence. No marketing claims, no sponsored opinions.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>siavashsed.github.io/supplementverge — Supplement Reviews & Science</title>
+<meta name="description" content="Expert insights on supplement reviews & science">
+
+
+
 <style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{  --bg:#060a07;--bg2:#0c1009;--sur:#121810;
-  --pri:#84cc16;--pri2:#65a30d;
-  --txt:#eef8e0;--mut:#7a9860;--brd:#1a2814;
-  --fh:system-ui,sans-serif;--fb:system-ui,sans-serif;--fm:monospace;}
-body{font-family:var(--fb);background:var(--bg);color:var(--txt);font-size:15px;line-height:1.7;min-height:100vh}
-a{color:var(--pri);text-decoration:none}a:hover{opacity:.8}
-.stk-bar{display:flex;align-items:center;justify-content:space-between;padding:16px 48px;border-bottom:1px solid var(--brd);background:var(--bg);position:sticky;top:0;z-index:99;backdrop-filter:blur(10px)}
-.stk-brand{font-size:18px;font-weight:800;color:var(--txt);letter-spacing:-0.5px;text-decoration:none}
-.stk-brand span{color:var(--pri)}
-.stk-bar-nav{display:flex;gap:28px}.stk-bar-nav a{font-size:13px;color:var(--mut);transition:color .2s}.stk-bar-nav a:hover{color:var(--txt)}
-.stk-splash{padding:80px 48px 64px;background:linear-gradient(160deg,var(--bg2) 0%,var(--bg) 70%);border-bottom:1px solid var(--brd)}
-.stk-splash-tag{font-size:11px;font-weight:700;color:var(--pri);text-transform:uppercase;letter-spacing:3px;margin-bottom:20px}
-.stk-splash h1{font-size:clamp(28px,4vw,52px);font-weight:800;line-height:1.1;letter-spacing:-1px;max-width:700px;margin-bottom:18px}
-.stk-splash p{font-size:16px;color:var(--mut);max-width:580px;line-height:1.8}
-.stk-shelf{padding:56px 48px;max-width:1200px;margin:0 auto}
-.stk-shelf-hd{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--mut);border-bottom:1px solid var(--brd);padding-bottom:12px;margin-bottom:28px}
-.stk-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
-.stk-item{background:var(--bg2);border:1px solid var(--brd);border-radius:8px;padding:24px;display:flex;flex-direction:column;gap:10px;transition:border-color .2s,transform .15s}
-.stk-item:hover{border-color:var(--pri2);transform:translateY(-2px)}
-.stk-item-cat{font-size:10px;font-weight:700;color:var(--pri);text-transform:uppercase;letter-spacing:2px}
-.stk-item h2{font-size:17px;font-weight:700;line-height:1.35;color:var(--txt)}
-.stk-item p{font-size:13px;color:var(--mut);line-height:1.75;flex:1}
-.stk-item-meta{font-size:11px;color:var(--mut);display:flex;justify-content:space-between}
-.stk-item-read{font-size:12px;font-weight:600;color:var(--pri)}
-.stk-letter{background:var(--sur);border-top:1px solid var(--brd);border-bottom:1px solid var(--brd);padding:72px 48px;text-align:center}
-.stk-letter h2{font-size:clamp(22px,3vw,34px);font-weight:800;margin-bottom:12px}
-.stk-letter p{color:var(--mut);font-size:15px;margin-bottom:28px;max-width:500px;margin-left:auto;margin-right:auto}
-.stk-letter-form{display:flex;gap:10px;max-width:440px;margin:0 auto}
-.stk-letter-input{flex:1;background:var(--bg);border:1px solid var(--brd);border-radius:6px;padding:11px 16px;color:var(--txt);font-size:14px;outline:none;transition:border-color .2s}
-.stk-letter-input:focus{border-color:var(--pri)}.stk-letter-input::placeholder{color:var(--mut)}
-.stk-letter-btn{background:var(--pri);color:#000;border:none;border-radius:6px;padding:11px 22px;font-size:14px;font-weight:700;cursor:pointer;white-space:nowrap;transition:background .2s}
-.stk-letter-btn:hover{background:var(--pri2)}
-.stk-letter-ok{color:var(--pri);font-size:15px;font-weight:600;padding:8px}
-.stk-base{padding:28px 48px;border-top:1px solid var(--brd);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
-.stk-base-copy{font-size:12px;color:var(--mut)}
-.stk-base-links{display:flex;gap:20px}.stk-base-links a{font-size:12px;color:var(--mut)}
-@media(max-width:700px){.stk-bar{padding:12px 16px}.stk-splash{padding:48px 16px 40px}.stk-shelf{padding:40px 16px}.stk-letter{padding:48px 16px}.stk-letter-form{flex-direction:column}.stk-base{padding:20px 16px;flex-direction:column;text-align:center}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:#0d0d0d;color:#e8e8e8;line-height:1.65;font-size:16px}
+a{color:#6c63ff;text-decoration:none}
+a:hover{color:#9d97ff}
+img{max-width:100%;display:block;height:auto}
+
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+.top-bar{background:#141414;border-bottom:1px solid #252525;padding:0}
+.logo{font-size:22px;font-weight:800;color:#6c63ff}
+.split{display:grid;grid-template-columns:2fr 1fr;gap:36px;margin:40px 0 48px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+@media(max-width:780px){.split{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-
-<!-- nav -->
-<div class="stk-bar">
-  <a href="./" class="stk-brand">Supplement<span> Verge</span></a>
-  <nav class="stk-bar-nav"><a href="./">Home</a><a href="about.html">About</a></nav>
-</div>
-
-<!-- hero -->
-<div class="stk-splash">
-  <div class="stk-splash-tag">Supplement Science</div>
-  <h1>What the Research Actually Says</h1>
-  <p>Supplement reviews and nutrition science graded by human clinical evidence. No marketing claims, no sponsored opinions.</p>
-</div>
-
-<!-- pexels-banner -->
-<!-- hero-banner -->
-<div id="pxl-wrap" style="width:100%;height:220px;overflow:hidden;position:relative;background:var(--bg2);">
-  <img id="pxl-img" style="width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .8s;display:block;" alt="">
-  <a id="pxl-cred" href="https://www.pexels.com" target="_blank" rel="noopener" style="position:absolute;bottom:6px;right:10px;font-size:10px;color:rgba(255,255,255,.5);opacity:0;transition:opacity .6s;text-decoration:none;">Photo: Pexels</a>
-</div>
-
-<!-- about section -->
-<div style="background:#0c1009;border-top:1px solid #1a2814;border-bottom:1px solid #1a2814;padding:40px">
-  <div style="max-width:800px;margin:0 auto">
-    <div style="font-size:10px;color:#84cc16;text-transform:uppercase;letter-spacing:3px;margin-bottom:20px">// about this publication</div>
-    <div style="display:grid;grid-template-columns:60px 1fr;gap:20px;align-items:start;margin-bottom:24px">
-      <div style="width:56px;height:56px;border-radius:50%;background:#84cc16;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:800;color:#000;flex-shrink:0;letter-spacing:-1px">DJ</div>
-      <div>
-        <div style="font-size:16px;font-weight:700;color:#eef8e0;margin-bottom:2px">Dr. James Holloway</div>
-        <div style="font-size:12px;color:#84cc16;margin-bottom:14px;font-weight:600">Sports Scientist & Registered Nutritionist</div>
-        <p style="font-size:14px;color:#7a9860;line-height:1.85;margin-bottom:12px">I've spent 11 years reviewing clinical trials and working with competitive athletes on evidence-based nutrition protocols. The gap between what supplement brands claim and what studies show is enormous.</p>
-        <p style="font-size:14px;color:#7a9860;line-height:1.85">Supplement Verge cuts through the marketing. Every ingredient gets graded by the quality of human evidence behind it - not by how impressive the label looks.</p>
-      </div>
-    </div>
-    <a href="about.html" style="display:inline-block;border:1px solid #84cc16;color:#84cc16;padding:8px 20px;border-radius:3px;font-size:12px;font-weight:700;text-decoration:none;text-transform:uppercase;letter-spacing:1px;transition:all .2s">Full bio →</a>
+<div class="top-bar">
+  <div class="wrap" style="padding:16px 24px;display:flex;justify-content:space-between;align-items:center">
+    <a href="/" class="logo">siavashsed.github.io/supplementverge</a>
+    <span style="font-size:11px;color:#555;text-transform:uppercase;letter-spacing:2px">Supplement Reviews & Science</span>
   </div>
 </div>
-
-<!-- articles -->
-<div class="stk-shelf">
-  <div class="stk-shelf-hd">Latest Articles</div>
-  <div class="stk-grid" id="stk-grid"></div>
-</div>
-
-<!-- newsletter -->
-<div class="stk-letter">
-  <h2>The Evidence Brief</h2>
-  <p>Monthly supplement science roundup - what the trials actually showed.</p>
-  <form id="stk-nl" onsubmit="nlSub(event)">
-    <div class="stk-letter-form">
-      <input type="email" class="stk-letter-input" placeholder="your@email.com" required>
-      <button type="submit" class="stk-letter-btn">Subscribe</button>
-    </div>
-  </form>
-</div>
-
-<!-- footer -->
-<div class="stk-base">
-  <span class="stk-base-copy">© Supplement Verge - by Dr. James Holloway</span>
-  <div class="stk-base-links"><a href="./">Home</a><a href="about.html">About</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a><a href="sms.html">SMS Policy</a><a href="meta-policy.html">Meta Policy</a></div>
-</div>
-
-<script>
-/* load articles grid */
-async function loadPosts(){
-  const el=document.getElementById('stk-grid');
-  try{
-    const r=await fetch('./articles.json');if(!r.ok)throw 0;
-    const posts=await r.json();if(!posts.length)throw 0;
-    el.innerHTML=posts.slice(0,9).map(p=>`<div class="stk-item" style="padding:0;overflow:hidden;">
-      ${p.image?`<a href="./${p.slug||'#'}/"><img src="${p.image}" alt="${p.title}" style="width:100%;height:160px;object-fit:cover;display:block;"></a>`:''}
-      <div style="padding:18px 20px;display:flex;flex-direction:column;gap:8px;flex:1;">
-        <div class="stk-item-cat">Supplement Science</div>
-        <h2>${p.title}</h2>
-        <p>${p.meta_description||''}</p>
-        <div class="stk-item-meta"><span>${p.date_iso||''}</span><a class="stk-item-read" href="./${p.slug||'#'}/">Read →</a></div>
+<div class="wrap">
+  <div class="split">
+    <div>
+        <img src="https://images.pexels.com/photos/7615456/pexels-photo-7615456.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Ashwagandha for Stress: What the Human Trials Actually Found" loading="lazy" style="width:100%;height:300px;object-fit:cover;border-radius:8px;margin-bottom:16px">
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#6c63ff;margin-bottom:8px">Supplement Reviews & Science</div>
+        <a href="/ashwagandha-stress-human-trials/" style="font-size:clamp(20px,3vw,28px);font-weight:700;line-height:1.25;color:#e8e8e8;display:block;margin-bottom:12px">Ashwagandha for Stress: What the Human Trials Actually Found</a>
+        <p style="font-size:15px;color:#aaa;line-height:1.6;margin-bottom:16px">Dr. James Holloway reviews human clinical trials on ashwagandha for stress. What the data shows, what it doesn't, and where the marketing oversteps.</p>
+        <a href="/ashwagandha-stress-human-trials/" style="font-size:13px;font-weight:700;color:#6c63ff">Read full article →</a>
+        <div style="font-size:11px;color:#555;margin-top:8px">May 17, 2026</div></div>
+    <div>
+      <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#6c63ff;padding-bottom:10px;border-bottom:2px solid #6c63ff;margin-bottom:0">Latest</div>
+      
+    <div style="display:flex;gap:12px;padding:12px 0;border-bottom:1px solid #252525">
+      <img src="https://images.pexels.com/photos/1458713/pexels-photo-1458713.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Vitamin D Deficiency: Why Most People Are Getting the Dose Completely Wrong" loading="lazy" style="width:72px;height:58px;object-fit:cover;border-radius:4px;flex-shrink:0">
+      <div>
+        <div style="font-size:11px;color:#555;margin-bottom:3px">May 16, 2026</div>
+        <a href="/vitamin-d-deficiency-dose-wrong/" style="font-size:14px;font-weight:600;color:#e8e8e8;line-height:1.35">Vitamin D Deficiency: Why Most People Are Getting the Dose Completely Wrong</a>
       </div>
-    </div>`).join('');
-  }catch(e){
-    el.innerHTML='<div class="stk-item"><div class="stk-item-cat">Coming Soon</div><h2>Articles publishing shortly</h2><p>The content system is warming up. Check back soon.</p></div>';
-  }
-}
-function nlSub(e){e.preventDefault();document.getElementById('stk-nl').innerHTML='<div class="stk-letter-ok">✓ You're in. Check your inbox.</div>';}
-loadPosts();
-/* banner loader: pexels → picsum fallback */
-(function(){
-  var el=document.getElementById('pxl-img');
-  var cr=document.getElementById('pxl-cred');
-  if(!el)return;
-  function showImg(src,cred){
-    el.onload=function(){el.style.opacity='1';if(cred&&cr){cr.textContent=cred;cr.style.opacity='1';}};
-    el.src=src;
-  }
-  var k=localStorage.getItem('pexelsKey');
-  if(k){
-    fetch('https://api.pexels.com/v1/search?query='+encodeURIComponent('nutrition supplements vitamins health science')+'&per_page=5&orientation=landscape',{headers:{Authorization:k}})
-      .then(function(r){return r.json();}).then(function(d){
-        if(d.photos&&d.photos[0]){showImg(d.photos[0].src.large,'Photo: Pexels');}
-        else{showImg('https://picsum.photos/seed/324/1400/400','');}
-      }).catch(function(){showImg('https://picsum.photos/seed/324/1400/400','');});
-  }else{
-    showImg('https://picsum.photos/seed/324/1400/400','');
-  }
-})();
-</script>
-</body></html>
+    </div>
+    <div style="display:flex;gap:12px;padding:12px 0;border-bottom:1px solid #252525">
+      <img src="https://images.pexels.com/photos/4720498/pexels-photo-4720498.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Protein Timing: Does When You Eat Actually Matter As Much As How Much?" loading="lazy" style="width:72px;height:58px;object-fit:cover;border-radius:4px;flex-shrink:0">
+      <div>
+        <div style="font-size:11px;color:#555;margin-bottom:3px">May 15, 2026</div>
+        <a href="/protein-timing-does-when-you-eat-matter/" style="font-size:14px;font-weight:600;color:#e8e8e8;line-height:1.35">Protein Timing: Does When You Eat Actually Matter As Much As How Much?</a>
+      </div>
+    </div>
+    <div style="display:flex;gap:12px;padding:12px 0;border-bottom:1px solid #252525">
+      <img src="https://images.pexels.com/photos/4720497/pexels-photo-4720497.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Does Pre-Workout Actually Improve Performance? A Sports Scientist Cuts Through the Hype" loading="lazy" style="width:72px;height:58px;object-fit:cover;border-radius:4px;flex-shrink:0">
+      <div>
+        <div style="font-size:11px;color:#555;margin-bottom:3px">May 15, 2026</div>
+        <a href="/pre-workout-performance-evidence-reviewed/" style="font-size:14px;font-weight:600;color:#e8e8e8;line-height:1.35">Does Pre-Workout Actually Improve Performance? A Sports Scientist Cuts Through the Hype</a>
+      </div>
+    </div>
+    <div style="display:flex;gap:12px;padding:12px 0;border-bottom:1px solid #252525">
+      <img src="https://images.pexels.com/photos/17820732/pexels-photo-17820732.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Creatine Monohydrate: What 500+ Studies Actually Show (And What the Industry Won't Tell You)" loading="lazy" style="width:72px;height:58px;object-fit:cover;border-radius:4px;flex-shrink:0">
+      <div>
+        <div style="font-size:11px;color:#555;margin-bottom:3px">May 15, 2026</div>
+        <a href="/creatine-monohydrate-what-studies-show/" style="font-size:14px;font-weight:600;color:#e8e8e8;line-height:1.35">Creatine Monohydrate: What 500+ Studies Actually Show (And What the Industry Won't Tell You)</a>
+      </div>
+    </div>
+    </div>
+  </div>
+  
+  <div class="grid"></div>
+</div>
+<footer style="background:#141414;border-top:1px solid #252525;padding:40px 24px;text-align:center;font-size:13px;color:#555;margin-top:60px">
+<p>&copy; 2026 siavashsed.github.io/supplementverge &nbsp;&middot;&nbsp; Supplement Reviews & Science</p>
+<p style="margin-top:6px;font-size:11px">For informational purposes only. Not financial or investment advice.</p>
+<p style="margin-top:6px;font-size:11px"><a href="/about/" style="color:#555">About</a> &nbsp;&middot;&nbsp; <a href="/contact/" style="color:#555">Contact</a> &nbsp;&middot;&nbsp; <a href="/privacy/" style="color:#555">Privacy Policy</a></p>
+</footer></body></html>
