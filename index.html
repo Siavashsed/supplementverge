@@ -173,7 +173,7 @@ a{color:var(--pri);text-decoration:none}
     <div class="stk-vp-card">
       <div class="stk-vp-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
       <div class="stk-vp-title">Battle-Tested</div>
-      <div class="stk-vp-desc">Strategies drawn from real supplement science experience — not theory, not templates.</div>
+      <div class="stk-vp-desc">Strategies drawn from real supplement science experience  -  not theory, not templates.</div>
     </div>
   </div>
 </div>
@@ -247,10 +247,10 @@ loadPosts();
     fetch('https://api.pexels.com/v1/search?query='+encodeURIComponent('nutrition supplements vitamins health science')+'&per_page=5&orientation=landscape',{headers:{Authorization:k}})
       .then(function(r){return r.json();}).then(function(d){
         if(d.photos&&d.photos[0]){showImg(d.photos[0].src.large,'Photo: Pexels');}
-        else{showImg('https://picsum.photos/seed/341/1400/400','');}
-      }).catch(function(){showImg('https://picsum.photos/seed/341/1400/400','');});
+        else{showImg('https://picsum.photos/seed/809/1400/400','');}
+      }).catch(function(){showImg('https://picsum.photos/seed/809/1400/400','');});
   }else{
-    showImg('https://picsum.photos/seed/341/1400/400','');
+    showImg('https://picsum.photos/seed/809/1400/400','');
   }
 })();
 </script>
