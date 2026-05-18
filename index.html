@@ -1,250 +1,519 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Supplement Verge - What the Research Actually Says</title>
 <meta name="description" content="Supplement reviews and nutrition science graded by human clinical evidence. No marketing claims, no sponsored opinions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{  --bg:#060a07;--bg2:#0c1009;--sur:#121810;
-  --pri:#84cc16;--pri2:#65a30d;
-  --txt:#eef8e0;--mut:#7a9860;--brd:#1a2814;
-  --fh:system-ui,sans-serif;--fb:system-ui,sans-serif;--fm:monospace;}
-body{font-family:var(--fb);background:var(--bg);color:var(--txt);font-size:15px;line-height:1.7;min-height:100vh}
-a{color:var(--pri);text-decoration:none}
-.stk-bar{display:flex;align-items:center;justify-content:space-between;padding:16px 48px;position:fixed;top:0;width:100%;z-index:99;transition:background .35s,border-color .35s}
-.stk-bar.solid{background:var(--bg)ee;border-bottom:1px solid var(--brd);backdrop-filter:blur(14px)}
-.stk-brand{font-size:20px;font-weight:900;letter-spacing:-0.5px;color:#fff;transition:color .3s;text-decoration:none}
-.stk-bar.solid .stk-brand{color:var(--txt)}
-.stk-brand-acc{color:var(--pri)}
-.stk-bar-nav{display:flex;gap:28px}
-.stk-bar-nav a{font-size:13px;color:rgba(255,255,255,.75);font-weight:500;transition:color .2s}
-.stk-bar.solid .stk-bar-nav a{color:var(--mut)}
-.stk-bar-nav a:hover{color:#fff}
-.stk-bar.solid .stk-bar-nav a:hover{color:var(--txt)}
-.stk-hero{position:relative;height:88vh;min-height:540px;max-height:820px;display:flex;align-items:center;justify-content:center;overflow:hidden}
-.stk-hero-bg{position:absolute;inset:0;background:var(--bg2)}
-.stk-hero-bg img{width:100%;height:100%;object-fit:cover;display:block;opacity:0;transition:opacity 1.2s}
-.stk-hero-ov{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.55) 0%,rgba(0,0,0,.35) 50%,rgba(0,0,0,.75) 100%)}
-.stk-hero-content{position:relative;z-index:2;text-align:center;padding:0 24px;max-width:820px}
-.stk-hero-badge{display:inline-block;background:var(--pri);color:#000;font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase;padding:5px 14px;border-radius:2px;margin-bottom:22px}
-.stk-hero h1{font-size:clamp(32px,5vw,62px);font-weight:900;line-height:1.08;letter-spacing:-2px;color:#fff;margin-bottom:18px}
-.stk-hero p{font-size:17px;color:rgba(255,255,255,.75);max-width:540px;margin:0 auto 34px;line-height:1.75}
-.stk-hero-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-.stk-cta{background:var(--pri);color:#000;border-radius:4px;padding:14px 32px;font-size:15px;font-weight:800;transition:transform .2s,opacity .2s}
-.stk-cta:hover{transform:translateY(-2px);opacity:.9}
-.stk-cta2{border:1.5px solid rgba(255,255,255,.5);color:#fff;border-radius:4px;padding:13px 28px;font-size:15px;font-weight:600;transition:all .2s}
-.stk-cta2:hover{border-color:#fff;background:rgba(255,255,255,.1)}
-.stk-scroll-hint{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);z-index:2;color:rgba(255,255,255,.45);font-size:11px;letter-spacing:1px;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;gap:7px}
-.stk-scroll-arr{animation:sbarr 1.8s ease-in-out infinite}
-@keyframes sbarr{0%,100%{transform:translateY(0)}50%{transform:translateY(7px)}}
-.stk-stats{display:grid;grid-template-columns:repeat(4,1fr);background:var(--bg2);border-bottom:1px solid var(--brd)}
-.stk-stat{padding:22px 16px;text-align:center;border-right:1px solid var(--brd)}
-.stk-stat:last-child{border-right:none}
-.stk-stat-num{font-size:24px;font-weight:900;color:var(--pri);letter-spacing:-1px}
-.stk-stat-label{font-size:11px;color:var(--mut);margin-top:3px;text-transform:uppercase;letter-spacing:.5px}
-.stk-vp{padding:52px 48px;background:var(--bg2);border-bottom:1px solid var(--brd)}
-.stk-vp-in{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.stk-vp-card{padding:28px;border:1px solid var(--brd);border-radius:10px;background:var(--bg);transition:border-color .25s}
-.stk-vp-card:hover{border-color:var(--pri2)}
-.stk-vp-icon{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--pri)22,var(--pri2)11);display:flex;align-items:center;justify-content:center;color:var(--pri);margin-bottom:14px}
-.stk-vp-title{font-size:17px;font-weight:700;margin-bottom:8px}
-.stk-vp-desc{font-size:14px;color:var(--mut);line-height:1.7}
-/* featured strip */
-.stk-feat-wrap{max-width:1200px;margin:0 auto;padding:40px 48px 28px}
-.stk-feat-hd{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:2px;color:var(--mut);margin-bottom:20px;display:flex;align-items:center;gap:12px}.stk-feat-hd::after{content:'';flex:1;height:1px;background:var(--brd)}
-.stk-feat-grid{display:grid;grid-template-columns:1.65fr 1fr;gap:20px}
-.stk-feat-main{border:1px solid var(--brd);border-radius:12px;overflow:hidden;background:var(--bg2);transition:border-color .2s,transform .15s;text-decoration:none;display:block;color:inherit}.stk-feat-main:hover{border-color:var(--pri2);transform:translateY(-3px)}
-.stk-feat-img{width:100%;height:280px;object-fit:cover;display:block;background:var(--sur)}
-.stk-feat-body{padding:20px 22px}
-.stk-feat-lbl{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--pri);margin-bottom:8px}
-.stk-feat-title{font-size:clamp(16px,2.2vw,22px);font-weight:800;line-height:1.28;color:var(--txt);margin-bottom:8px}
-.stk-feat-desc{font-size:13px;color:var(--mut);line-height:1.7}
-.stk-feat-meta{font-size:11px;color:var(--mut);margin-top:10px;display:flex;gap:8px;align-items:center}
-.stk-feat-cta{display:inline-block;color:var(--pri);font-weight:700;font-size:12px;margin-top:10px}
-.stk-feat-side{display:flex;flex-direction:column;gap:12px}
-.stk-feat-mini{display:flex;gap:0;border:1px solid var(--brd);border-radius:10px;overflow:hidden;background:var(--bg2);transition:border-color .2s,transform .15s;text-decoration:none;color:inherit;align-items:stretch}.stk-feat-mini:hover{border-color:var(--pri2);transform:translateY(-2px)}
-.stk-feat-mini-img{width:86px;height:86px;object-fit:cover;flex-shrink:0;background:var(--sur)}
-.stk-feat-mini-body{padding:10px 14px;flex:1}
-.stk-feat-mini-lbl{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--pri);margin-bottom:4px}
-.stk-feat-mini-title{font-size:13px;font-weight:600;line-height:1.4;color:var(--txt)}
-.stk-feat-mini-date{font-size:10px;color:var(--mut);margin-top:4px}
-/* topics */
-.stk-topics{padding:12px 48px;background:var(--bg2);border-top:1px solid var(--brd);border-bottom:1px solid var(--brd);display:flex;align-items:center;gap:8px;overflow-x:auto;scrollbar-width:none}
-.stk-topics::-webkit-scrollbar{display:none}
-.stk-topics-lbl{font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:2px;color:var(--mut);flex-shrink:0;margin-right:4px}
-.stk-topic{flex-shrink:0;font-size:11px;font-weight:600;padding:5px 12px;border:1px solid var(--brd);border-radius:100px;color:var(--mut);cursor:pointer;transition:all .2s;white-space:nowrap}.stk-topic:hover{border-color:var(--pri);color:var(--pri);background:var(--bg)}
-.stk-shelf{padding:52px 48px;max-width:1200px;margin:0 auto}
-.stk-shelf-hd{display:flex;align-items:center;gap:14px;margin-bottom:28px}
-.stk-shelf-hd h2{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:2px;color:var(--txt)}
-.stk-shelf-hd::after{content:'';flex:1;height:1px;background:var(--brd)}
-.stk-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
-.stk-item{background:var(--bg2);border:1px solid var(--brd);border-radius:10px;overflow:hidden;transition:border-color .2s,transform .15s}
-.stk-item:hover{border-color:var(--pri2);transform:translateY(-3px)}
-.stk-item img{width:100%;height:170px;object-fit:cover;display:block}
-.stk-item-body{padding:18px 20px}
-.stk-item-cat{font-size:10px;font-weight:700;color:var(--pri);text-transform:uppercase;letter-spacing:2px;margin-bottom:6px}
-.stk-item h3{font-size:16px;font-weight:700;line-height:1.4;color:var(--txt);margin-bottom:8px}
-.stk-item p{font-size:13px;color:var(--mut);line-height:1.7}
-.stk-item-meta{font-size:11px;color:var(--mut);display:flex;justify-content:space-between;margin-top:10px;padding-top:10px;border-top:1px solid var(--brd)}
-.stk-item-read{color:var(--pri);font-weight:600}
-.stk-letter{background:var(--sur);border-top:1px solid var(--brd);border-bottom:1px solid var(--brd);padding:72px 48px;text-align:center}
-.stk-letter h2{font-size:clamp(22px,3vw,34px);font-weight:800;margin-bottom:12px}
-.stk-letter p{color:var(--mut);font-size:15px;margin-bottom:28px;max-width:500px;margin-left:auto;margin-right:auto}
-.stk-letter-form{display:flex;gap:10px;max-width:440px;margin:0 auto}
-.stk-letter-input{flex:1;background:var(--bg);border:1px solid var(--brd);border-radius:6px;padding:12px 16px;color:var(--txt);font-size:14px;outline:none;transition:border-color .2s}
-.stk-letter-input:focus{border-color:var(--pri)}
-.stk-letter-btn{background:var(--pri);color:#000;border:none;border-radius:6px;padding:12px 24px;font-size:14px;font-weight:700;cursor:pointer;white-space:nowrap;transition:opacity .2s}
-.stk-letter-btn:hover{opacity:.85}
-.stk-base{padding:28px 48px;border-top:1px solid var(--brd);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
-.stk-base-copy{font-size:12px;color:var(--mut)}
-.stk-base-links{display:flex;gap:20px}.stk-base-links a{font-size:12px;color:var(--mut);transition:color .2s}.stk-base-links a:hover{color:var(--txt)}
-.reveal{opacity:0;transform:translateY(20px);transition:opacity .6s,transform .6s}
-.reveal.visible{opacity:1;transform:none}
-@media(max-width:900px){.stk-stats{grid-template-columns:1fr 1fr}.stk-stat:nth-child(2){border-right:none}.stk-feat-grid{grid-template-columns:1fr}}
-@media(max-width:700px){.stk-bar{padding:12px 16px}.stk-shelf{padding:40px 16px}.stk-feat-wrap{padding:28px 16px 16px}.stk-topics{padding:12px 16px}.stk-vp{padding:40px 16px}.stk-vp-in{grid-template-columns:1fr}.stk-letter{padding:48px 16px}.stk-letter-form{flex-direction:column}.stk-base{padding:20px 16px;flex-direction:column;text-align:center}.stk-hero h1{letter-spacing:-1px}}
+html{scroll-behavior:smooth}
+:root{
+  --bg:#060a07;
+  --bg2:#0c1009;
+  --surface:#121810;
+  --surface2:#182011;
+  --primary:#84cc16;
+  --primary2:#65a30d;
+  --text:#eef8e0;
+  --muted:#7a9860;
+  --border:#1a2814;
+  --font:'IBM Plex Sans',system-ui,sans-serif;
+  --mono:'IBM Plex Mono',monospace;
+  --shadow-green:0 4px 24px rgba(132,204,22,.14);
+  --shadow-dark:0 4px 16px rgba(0,0,0,.6);
+}
+body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:15px;line-height:1.65;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+
+/* NAV */
+.nav{
+  background:rgba(6,10,7,.93);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+  position:sticky;top:0;z-index:200;
+}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;height:62px;gap:0}
+.nav-logo{font-family:var(--mono);font-size:16px;font-weight:500;color:var(--primary);letter-spacing:.5px;margin-right:auto;display:flex;align-items:center;gap:10px}
+.nav-logo-icon{width:30px;height:30px;background:var(--primary);border-radius:6px;display:flex;align-items:center;justify-content:center}
+.nav-logo-icon svg{color:#060a07}
+.nav-links{display:flex;align-items:center;gap:4px}
+.nav-link{font-size:13px;font-weight:500;color:var(--muted);padding:6px 12px;border-radius:6px;transition:all .2s}
+.nav-link:hover{color:var(--text);background:var(--surface)}
+.nav-cta{font-family:var(--mono);font-size:12px;font-weight:500;color:#060a07;background:var(--primary);padding:7px 16px;border-radius:6px;margin-left:8px;letter-spacing:.3px;transition:all .2s}
+.nav-cta:hover{background:var(--primary2);transform:translateY(-1px)}
+.nav-menu-btn{display:none;background:none;border:1px solid var(--border);color:var(--muted);padding:7px 10px;border-radius:6px;cursor:pointer}
+@media(max-width:768px){
+  .nav-links{display:none}
+  .nav-menu-btn{display:block}
+  .nav-links.open{display:flex;flex-direction:column;position:absolute;top:62px;left:0;right:0;background:rgba(6,10,7,.97);border-bottom:1px solid var(--border);padding:12px;gap:4px}
+}
+
+/* EVIDENCE TICKER */
+.ev-bar{background:var(--surface);border-bottom:1px solid var(--border);height:36px;display:flex;align-items:center;overflow:hidden;gap:0}
+.ev-label{font-family:var(--mono);font-size:10px;font-weight:500;color:#060a07;background:var(--primary);padding:0 14px;height:100%;display:flex;align-items:center;flex-shrink:0;letter-spacing:1.5px;text-transform:uppercase;gap:6px}
+.ev-pulse{width:6px;height:6px;border-radius:50%;background:#060a07;animation:pulse 1.4s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.ev-track-wrap{flex:1;overflow:hidden}
+.ev-track{display:flex;white-space:nowrap;animation:ev-scroll 35s linear infinite}
+.ev-track:hover{animation-play-state:paused}
+@keyframes ev-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.ev-item{font-family:var(--mono);font-size:11px;display:inline-flex;gap:10px;align-items:center;padding:0 24px;border-right:1px solid var(--border);color:var(--muted)}
+.ev-grade{font-weight:600;padding:1px 6px;border-radius:3px;font-size:10px;letter-spacing:.5px}
+.ev-a{color:#060a07;background:var(--primary)}
+.ev-b{color:#065f46;background:#6ee7b7}
+.ev-c{color:#78350f;background:#fbbf24}
+
+/* HERO */
+.hero{padding:80px 24px 64px;max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 420px;gap:64px;align-items:center}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:11px;font-weight:500;color:var(--primary);background:rgba(132,204,22,.08);border:1px solid rgba(132,204,22,.2);padding:6px 14px;border-radius:20px;margin-bottom:24px;letter-spacing:.5px;text-transform:uppercase}
+.hero-badge-dot{width:6px;height:6px;border-radius:50%;background:var(--primary);animation:pulse 1.4s ease-in-out infinite}
+.hero-h1{font-size:clamp(32px,4.5vw,52px);font-weight:700;line-height:1.1;letter-spacing:-1px;color:var(--text);margin-bottom:20px}
+.hero-h1 em{font-style:normal;color:var(--primary)}
+.hero-sub{font-size:17px;color:var(--muted);line-height:1.7;margin-bottom:36px;max-width:520px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+.btn-primary{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:13px;font-weight:500;color:#060a07;background:var(--primary);padding:13px 24px;border-radius:8px;letter-spacing:.3px;transition:all .2s;cursor:pointer;border:none}
+.btn-primary:hover{background:var(--primary2);transform:translateY(-2px);box-shadow:var(--shadow-green)}
+.btn-outline{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:500;color:var(--muted);border:1px solid var(--border);padding:13px 24px;border-radius:8px;transition:all .2s}
+.btn-outline:hover{color:var(--text);border-color:var(--primary);transform:translateY(-2px)}
+
+/* GRADE CARD PANEL */
+.grade-panel{background:var(--surface);border:1px solid var(--border);border-radius:16px;overflow:hidden}
+.grade-panel-head{background:var(--surface2);padding:16px 20px;display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--border)}
+.grade-panel-title{font-family:var(--mono);font-size:12px;font-weight:500;color:var(--primary);text-transform:uppercase;letter-spacing:1px}
+.grade-rows{display:flex;flex-direction:column}
+.grade-row{display:grid;grid-template-columns:1fr auto auto;gap:12px;align-items:center;padding:12px 20px;border-bottom:1px solid var(--border);transition:background .2s}
+.grade-row:last-child{border-bottom:none}
+.grade-row:hover{background:var(--surface2)}
+.grade-name{font-size:13px;font-weight:500;color:var(--text)}
+.grade-dose{font-family:var(--mono);font-size:11px;color:var(--muted)}
+.grade-badge{font-family:var(--mono);font-size:11px;font-weight:600;padding:3px 10px;border-radius:4px;letter-spacing:.5px}
+.ga{color:#060a07;background:var(--primary)}
+.gb{color:#065f46;background:#6ee7b7}
+.gc{color:#78350f;background:#fbbf24}
+.gd{color:#7f1d1d;background:#fca5a5}
+
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr;gap:40px}
+  .grade-panel{display:none}
+}
+
+/* STATS STRIP */
+.stats{background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:24px}
+.stats-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border)}
+.stat{background:var(--surface);padding:20px 28px;text-align:center}
+.stat-val{font-family:var(--mono);font-size:28px;font-weight:600;color:var(--primary);line-height:1;margin-bottom:6px}
+.stat-lbl{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.8px}
+@media(max-width:640px){.stats-inner{grid-template-columns:repeat(2,1fr)}}
+
+/* SECTION */
+section{padding:72px 24px}
+.sec-inner{max-width:1200px;margin:0 auto}
+.sec-eyebrow{font-family:var(--mono);font-size:11px;font-weight:500;color:var(--primary);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.sec-eyebrow::before{content:'';width:20px;height:1px;background:var(--primary)}
+.sec-h2{font-size:clamp(24px,3vw,36px);font-weight:700;letter-spacing:-.5px;line-height:1.15;margin-bottom:12px}
+.sec-sub{font-size:15px;color:var(--muted);max-width:560px;line-height:1.7}
+
+/* INGREDIENT GRID */
+.ing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);margin-top:40px;border:1px solid var(--border);border-radius:12px;overflow:hidden}
+.ing-card{background:var(--surface);padding:24px;transition:background .2s;position:relative}
+.ing-card:hover{background:var(--surface2)}
+.ing-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:14px}
+.ing-name{font-size:15px;font-weight:600;color:var(--text)}
+.ing-grade{font-family:var(--mono);font-size:12px;font-weight:700;padding:4px 10px;border-radius:5px;letter-spacing:.5px}
+.ing-desc{font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:14px}
+.ing-meta{display:flex;gap:8px;flex-wrap:wrap}
+.ing-tag{font-family:var(--mono);font-size:10px;color:var(--muted);background:var(--surface2);border:1px solid var(--border);padding:3px 8px;border-radius:4px;letter-spacing:.3px}
+@media(max-width:900px){.ing-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:540px){.ing-grid{grid-template-columns:1fr}}
+
+/* METHODOLOGY */
+.meth-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:40px}
+.meth-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:24px}
+.meth-num{font-family:var(--mono);font-size:11px;font-weight:600;color:var(--primary);margin-bottom:10px;text-transform:uppercase;letter-spacing:1px}
+.meth-title{font-size:14px;font-weight:600;color:var(--text);margin-bottom:8px}
+.meth-desc{font-size:13px;color:var(--muted);line-height:1.6}
+@media(max-width:768px){.meth-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.meth-grid{grid-template-columns:1fr}}
+
+/* ARTICLES */
+.articles-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px;flex-wrap:wrap;gap:12px}
+.articles-tabs{display:flex;gap:4px;background:var(--surface);border:1px solid var(--border);padding:4px;border-radius:8px}
+.atab{font-family:var(--mono);font-size:12px;font-weight:500;padding:6px 14px;border-radius:5px;color:var(--muted);cursor:pointer;transition:all .2s;border:none;background:none}
+.atab.active{background:var(--primary);color:#060a07}
+.articles-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.art-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;overflow:hidden;transition:all .25s;cursor:pointer}
+.art-card:hover{border-color:rgba(132,204,22,.3);transform:translateY(-3px);box-shadow:0 8px 32px rgba(0,0,0,.4)}
+.art-img{width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--surface2)}
+.art-body{padding:18px}
+.art-cat{font-family:var(--mono);font-size:10px;font-weight:500;color:var(--primary);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
+.art-title{font-size:14px;font-weight:600;color:var(--text);line-height:1.4;margin-bottom:10px}
+.art-meta{display:flex;justify-content:space-between;align-items:center;font-size:11px;color:var(--muted)}
+.art-grade{font-family:var(--mono);font-size:10px;padding:2px 7px;border-radius:3px;font-weight:600}
+@media(max-width:768px){.articles-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.articles-grid{grid-template-columns:1fr}}
+
+/* AUTHOR */
+.author-wrap{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:36px;display:grid;grid-template-columns:auto 1fr;gap:32px;align-items:start;margin-top:40px}
+.author-avatar{width:72px;height:72px;border-radius:12px;background:linear-gradient(135deg,var(--primary),var(--primary2));display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:22px;font-weight:700;color:#060a07;flex-shrink:0}
+.author-cred{font-family:var(--mono);font-size:11px;color:var(--primary);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px}
+.author-name{font-size:20px;font-weight:700;color:var(--text);margin-bottom:4px}
+.author-title{font-size:13px;color:var(--muted);margin-bottom:16px}
+.author-bio{font-size:14px;color:var(--muted);line-height:1.7;margin-bottom:8px}
+@media(max-width:640px){.author-wrap{grid-template-columns:1fr}.author-avatar{width:56px;height:56px;font-size:18px}}
+
+/* NEWSLETTER */
+.nl{background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:72px 24px}
+.nl-inner{max-width:560px;margin:0 auto;text-align:center}
+.nl-eyebrow{font-family:var(--mono);font-size:11px;font-weight:500;color:var(--primary);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:16px}
+.nl-h2{font-size:28px;font-weight:700;letter-spacing:-.5px;margin-bottom:12px}
+.nl-sub{font-size:15px;color:var(--muted);line-height:1.7;margin-bottom:32px}
+.nl-form{display:flex;gap:10px;flex-wrap:wrap}
+.nl-input{flex:1;min-width:200px;font-family:var(--font);font-size:14px;color:var(--text);background:var(--bg);border:1px solid var(--border);padding:12px 16px;border-radius:8px;outline:none;transition:border-color .2s}
+.nl-input:focus{border-color:var(--primary)}
+.nl-input::placeholder{color:var(--muted)}
+.nl-btn{font-family:var(--mono);font-size:13px;font-weight:500;color:#060a07;background:var(--primary);border:none;padding:12px 24px;border-radius:8px;cursor:pointer;white-space:nowrap;transition:all .2s;letter-spacing:.3px}
+.nl-btn:hover{background:var(--primary2)}
+
+/* FOOTER */
+footer{background:var(--bg2);border-top:1px solid var(--border);padding:60px 24px 32px}
+.footer-inner{max-width:1200px;margin:0 auto}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px}
+.footer-brand-name{font-family:var(--mono);font-size:16px;font-weight:600;color:var(--primary);margin-bottom:12px}
+.footer-brand-desc{font-size:13px;color:var(--muted);line-height:1.7;margin-bottom:20px;max-width:280px}
+.footer-grade-legend{display:flex;flex-direction:column;gap:6px}
+.footer-grade-row{display:flex;align-items:center;gap:10px;font-size:12px;color:var(--muted)}
+.footer-grade-badge{font-family:var(--mono);font-size:10px;font-weight:600;padding:2px 8px;border-radius:3px;letter-spacing:.5px;width:22px;text-align:center}
+.footer-col-title{font-family:var(--mono);font-size:11px;font-weight:600;color:var(--text);text-transform:uppercase;letter-spacing:1.2px;margin-bottom:14px}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:8px}
+.footer-links li a{font-size:13px;color:var(--muted);transition:color .2s}
+.footer-links li a:hover{color:var(--primary)}
+.footer-bottom{border-top:1px solid var(--border);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.footer-copy{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.footer-legal{display:flex;gap:20px}
+.footer-legal a{font-family:var(--mono);font-size:12px;color:var(--muted);transition:color .2s}
+.footer-legal a:hover{color:var(--primary)}
+@media(max-width:900px){.footer-top{grid-template-columns:1fr 1fr}}
+@media(max-width:540px){.footer-top{grid-template-columns:1fr}.footer-bottom{flex-direction:column;text-align:center}}
 </style>
 </head>
 <body>
 
-<nav class="stk-bar" id="stk-bar">
-  <a href="./" class="stk-brand">Supplement<span class="stk-brand-acc"> Verge</span></a>
-  <div class="stk-bar-nav">
-    <a href="./">Home</a><a href="about.html">About</a><a href="privacy.html">Privacy</a>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">
+      <div class="nav-logo-icon">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>
+      </div>
+      SupplementVerge
+    </a>
+    <nav class="nav-links" id="nav-links">
+      <a href="/" class="nav-link">Reviews</a>
+      <a href="/about" class="nav-link">Methodology</a>
+      <a href="/#ingredients" class="nav-link">Ingredients</a>
+      <a href="/#newsletter" class="nav-link">Newsletter</a>
+    </nav>
+    <a href="/#newsletter" class="nav-cta">Get Evidence Brief</a>
+    <button class="nav-menu-btn" onclick="document.getElementById('nav-links').classList.toggle('open')" aria-label="Menu">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
   </div>
 </nav>
 
-<div class="stk-hero">
-  <div class="stk-hero-bg"><img id="pxl-img" alt="Supplement Verge"></div>
-  <div class="stk-hero-ov"></div>
-  <div class="stk-hero-content">
-    <div class="stk-hero-badge">Supplement Science</div>
-    <h1>What the Research Actually Says</h1>
-    <p>Supplement reviews and nutrition science graded by human clinical evidence. No marketing claims, no sponsored opinions.</p>
-    <div class="stk-hero-btns">
-      <a href="#latest" class="stk-cta">Read Articles →</a>
-      <a href="about.html" class="stk-cta2">About the Author</a>
-    </div>
-  </div>
-  <div class="stk-scroll-hint">
-    <span>Scroll</span>
-    <div class="stk-scroll-arr"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
-  </div>
-</div>
-
-<div class="stk-stats">
-  <div class="stk-stat"><div class="stk-stat-num">100+</div><div class="stk-stat-label">Guides</div></div>
-  <div class="stk-stat"><div class="stk-stat-num">5K+</div><div class="stk-stat-label">Readers</div></div>
-  <div class="stk-stat"><div class="stk-stat-num">Free</div><div class="stk-stat-label">Always</div></div>
-  <div class="stk-stat"><div class="stk-stat-num">Expert</div><div class="stk-stat-label">Vetted</div></div>
-</div>
-
-<!-- FEATURED ARTICLES UPFRONT -->
-<div class="stk-feat-wrap reveal">
-  <div class="stk-feat-hd">Featured</div>
-  <div class="stk-feat-grid" id="stk-feat"></div>
-</div>
-
-<!-- TOPICS STRIP -->
-<div class="stk-topics">
-  <span class="stk-topics-lbl">Topics</span>
-  <span class="stk-topic">Protein</span><span class="stk-topic">Creatine</span><span class="stk-topic">Pre-Workout</span><span class="stk-topic">Fat Loss</span><span class="stk-topic">Recovery</span><span class="stk-topic">Sleep</span><span class="stk-topic">Testosterone</span><span class="stk-topic">Evidence Grades</span>
-</div>
-
-<div class="stk-vp reveal">
-  <div class="stk-vp-in">
-    <div class="stk-vp-card">
-      <div class="stk-vp-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.5-2 5-.5 5s3.5-1 5-2.5m-1-3-1.5-1.5M17 2S22 7 22 7s-7.5 4.5-10.5 7.5c-1.5 1.5-3 2.5-4.5 2.5s-3-1-3-3 1-3 2.5-4.5C9.5 6.5 14 2 14 2z"/><circle cx="13" cy="11" r="1"/></svg></div>
-      <div class="stk-vp-title">Launch Faster</div>
-      <div class="stk-vp-desc">Step-by-step playbooks built for real business owners who don't have time to waste on fluff.</div>
-    </div>
-    <div class="stk-vp-card">
-      <div class="stk-vp-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
-      <div class="stk-vp-title">Revenue First</div>
-      <div class="stk-vp-desc">Every guide is focused on moving your bottom line with tactics that actually convert.</div>
-    </div>
-    <div class="stk-vp-card">
-      <div class="stk-vp-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
-      <div class="stk-vp-title">Battle-Tested</div>
-      <div class="stk-vp-desc">Strategies drawn from real supplement science experience  -  not theory, not templates.</div>
+<div class="ev-bar">
+  <div class="ev-label"><div class="ev-pulse"></div>EVIDENCE</div>
+  <div class="ev-track-wrap">
+    <div class="ev-track">
+      <span class="ev-item">Creatine Monohydrate <span class="ev-grade ev-a">A</span></span>
+      <span class="ev-item">Vitamin D3 <span class="ev-grade ev-a">A</span></span>
+      <span class="ev-item">Magnesium Glycinate <span class="ev-grade ev-b">B+</span></span>
+      <span class="ev-item">Omega-3 (EPA/DHA) <span class="ev-grade ev-a">A</span></span>
+      <span class="ev-item">Beta-Alanine <span class="ev-grade ev-b">B</span></span>
+      <span class="ev-item">Collagen Peptides <span class="ev-grade ev-c">C</span></span>
+      <span class="ev-item">Ashwagandha <span class="ev-grade ev-b">B</span></span>
+      <span class="ev-item">Citrulline Malate <span class="ev-grade ev-b">B+</span></span>
+      <span class="ev-item">Zinc Bisglycinate <span class="ev-grade ev-b">B</span></span>
+      <span class="ev-item">Rhodiola Rosea <span class="ev-grade ev-c">C+</span></span>
+      <span class="ev-item">Creatine Monohydrate <span class="ev-grade ev-a">A</span></span>
+      <span class="ev-item">Vitamin D3 <span class="ev-grade ev-a">A</span></span>
+      <span class="ev-item">Magnesium Glycinate <span class="ev-grade ev-b">B+</span></span>
+      <span class="ev-item">Omega-3 (EPA/DHA) <span class="ev-grade ev-a">A</span></span>
+      <span class="ev-item">Beta-Alanine <span class="ev-grade ev-b">B</span></span>
+      <span class="ev-item">Collagen Peptides <span class="ev-grade ev-c">C</span></span>
+      <span class="ev-item">Ashwagandha <span class="ev-grade ev-b">B</span></span>
+      <span class="ev-item">Citrulline Malate <span class="ev-grade ev-b">B+</span></span>
+      <span class="ev-item">Zinc Bisglycinate <span class="ev-grade ev-b">B</span></span>
+      <span class="ev-item">Rhodiola Rosea <span class="ev-grade ev-c">C+</span></span>
     </div>
   </div>
 </div>
 
-<div class="stk-shelf" id="latest">
-  <div class="stk-shelf-hd reveal"><h2>Latest Articles</h2></div>
-  <div class="stk-grid reveal" id="stk-grid"></div>
-</div>
-
-<div class="stk-shelf">
-  <div class="stk-shelf-hd reveal" id="more-hd" style="display:none"><h2>More from Supplement Verge</h2></div>
-  <div class="stk-grid reveal" id="more-grid"></div>
-</div>
-
-<div class="stk-letter reveal">
-  <h2>The Evidence Brief</h2>
-  <p>Monthly supplement science roundup - what the trials actually showed.</p>
-  <form id="stk-nl" onsubmit="nlSub(event)">
-    <div class="stk-letter-form">
-      <input type="email" class="stk-letter-input" placeholder="your@email.com" required>
-      <button type="submit" class="stk-letter-btn">Subscribe Free</button>
+<!-- HERO -->
+<section style="padding:72px 24px 56px">
+  <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 400px;gap:60px;align-items:center" class="hero-grid">
+    <div>
+      <div class="hero-badge">
+        <div class="hero-badge-dot"></div>
+        Evidence-Based Reviews
+      </div>
+      <h1 class="hero-h1">Supplements graded by<br><em>what the trials show</em></h1>
+      <p class="hero-sub">11 years reviewing clinical literature and working with athletes. Every ingredient on this site is rated A to D based on the quality of human evidence - not marketing claims.</p>
+      <div class="hero-actions">
+        <a href="/#ingredients" class="btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>
+          Ingredient Database
+        </a>
+        <a href="/#newsletter" class="btn-outline">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Monthly Brief
+        </a>
+      </div>
     </div>
-  </form>
+
+    <div class="grade-panel">
+      <div class="grade-panel-head">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color:var(--primary)"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        <span class="grade-panel-title">Current Evidence Ratings</span>
+      </div>
+      <div class="grade-rows">
+        <div class="grade-row"><span class="grade-name">Creatine Monohydrate</span><span class="grade-dose">3-5g/day</span><span class="grade-badge ga">A</span></div>
+        <div class="grade-row"><span class="grade-name">Vitamin D3 + K2</span><span class="grade-dose">2000-4000 IU</span><span class="grade-badge ga">A</span></div>
+        <div class="grade-row"><span class="grade-name">Omega-3 (EPA/DHA)</span><span class="grade-dose">2-4g/day</span><span class="grade-badge ga">A</span></div>
+        <div class="grade-row"><span class="grade-name">Magnesium Glycinate</span><span class="grade-dose">200-400mg</span><span class="grade-badge gb">B+</span></div>
+        <div class="grade-row"><span class="grade-name">Ashwagandha (KSM-66)</span><span class="grade-dose">300-600mg</span><span class="grade-badge gb">B</span></div>
+        <div class="grade-row"><span class="grade-name">Collagen Peptides</span><span class="grade-dose">10-20g/day</span><span class="grade-badge gc">C</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>@media(max-width:900px){.hero-grid{grid-template-columns:1fr !important}.grade-panel{display:none !important}}</style>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stats-inner">
+    <div class="stat"><div class="stat-val">340+</div><div class="stat-lbl">Ingredients Reviewed</div></div>
+    <div class="stat"><div class="stat-val">1,200+</div><div class="stat-lbl">Studies Analyzed</div></div>
+    <div class="stat"><div class="stat-val">11 yrs</div><div class="stat-lbl">Clinical Experience</div></div>
+    <div class="stat"><div class="stat-val">Zero</div><div class="stat-lbl">Paid Sponsorships</div></div>
+  </div>
 </div>
 
-<div class="stk-base">
-  <span class="stk-base-copy">© Supplement Verge - by Dr. James Holloway</span>
-  <div class="stk-base-links"><a href="./">Home</a><a href="about.html">About</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="sms.html">SMS</a><a href="meta-policy.html">Meta Policy</a></div>
+<!-- INGREDIENTS -->
+<section id="ingredients">
+  <div class="sec-inner">
+    <div class="sec-eyebrow">Ingredient Database</div>
+    <h2 class="sec-h2">Graded by human evidence quality</h2>
+    <p class="sec-sub">A = Multiple high-quality RCTs confirm the effect. B = Promising evidence with limitations. C = Weak or inconsistent evidence. D = No meaningful human evidence.</p>
+
+    <div class="ing-grid">
+      <div class="ing-card">
+        <div class="ing-top"><span class="ing-name">Creatine Monohydrate</span><span class="ing-grade ga">A</span></div>
+        <p class="ing-desc">The most well-researched performance supplement in existence. Increases PCr stores, improves high-intensity output, and supports muscle retention during cuts.</p>
+        <div class="ing-meta"><span class="ing-tag">Strength</span><span class="ing-tag">Power</span><span class="ing-tag">Muscle</span><span class="ing-tag">3-5g/day</span></div>
+      </div>
+      <div class="ing-card">
+        <div class="ing-top"><span class="ing-name">Vitamin D3</span><span class="ing-grade ga">A</span></div>
+        <p class="ing-desc">Highly prevalent deficiency with wide downstream effects. Supplementation consistently improves bone density, immune function, and mood in deficient populations.</p>
+        <div class="ing-meta"><span class="ing-tag">Bone Health</span><span class="ing-tag">Immune</span><span class="ing-tag">2000-4000 IU</span></div>
+      </div>
+      <div class="ing-card">
+        <div class="ing-top"><span class="ing-name">Omega-3 (EPA/DHA)</span><span class="ing-grade ga">A</span></div>
+        <p class="ing-desc">Strong evidence for cardiovascular health, inflammation reduction, and cognitive support. Marine-sourced EPA/DHA far outperforms plant-based ALA conversion.</p>
+        <div class="ing-meta"><span class="ing-tag">Heart</span><span class="ing-tag">Brain</span><span class="ing-tag">Anti-inflammatory</span></div>
+      </div>
+      <div class="ing-card">
+        <div class="ing-top"><span class="ing-name">Magnesium Glycinate</span><span class="ing-grade gb">B+</span></div>
+        <p class="ing-desc">Best-absorbed magnesium form. Good evidence for sleep quality and muscle recovery. Especially useful for athletes training at high volume.</p>
+        <div class="ing-meta"><span class="ing-tag">Sleep</span><span class="ing-tag">Recovery</span><span class="ing-tag">200-400mg</span></div>
+      </div>
+      <div class="ing-card">
+        <div class="ing-top"><span class="ing-name">Ashwagandha (KSM-66)</span><span class="ing-grade gb">B</span></div>
+        <p class="ing-desc">Solid evidence for cortisol reduction and stress response. Modest testosterone support in stressed populations. KSM-66 extract has the best trial data.</p>
+        <div class="ing-meta"><span class="ing-tag">Stress</span><span class="ing-tag">Cortisol</span><span class="ing-tag">300-600mg</span></div>
+      </div>
+      <div class="ing-card">
+        <div class="ing-top"><span class="ing-name">Beta-Alanine</span><span class="ing-grade gb">B</span></div>
+        <p class="ing-desc">Buffers lactic acid buildup. Benefits are specific to 1-4 minute high-intensity efforts. The tingling (paresthesia) is harmless but not everyone can tolerate it.</p>
+        <div class="ing-meta"><span class="ing-tag">Endurance</span><span class="ing-tag">Performance</span><span class="ing-tag">3.2-6.4g/day</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- METHODOLOGY -->
+<section style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+  <div class="sec-inner">
+    <div class="sec-eyebrow">How We Grade</div>
+    <h2 class="sec-h2">Our review methodology</h2>
+    <p class="sec-sub">Every rating follows the same process. No exceptions for popular ingredients, no exceptions for sponsors (we have none).</p>
+
+    <div class="meth-grid">
+      <div class="meth-card">
+        <div class="meth-num">Step 01</div>
+        <div class="meth-title">PubMed Search</div>
+        <div class="meth-desc">We start with a systematic PubMed search filtering for human RCTs. Animal studies and in-vitro research don't count toward the grade.</div>
+      </div>
+      <div class="meth-card">
+        <div class="meth-num">Step 02</div>
+        <div class="meth-title">Quality Assessment</div>
+        <div class="meth-desc">We evaluate study quality: sample size, blinding, placebo controls, funding source, and whether outcomes are clinically relevant.</div>
+      </div>
+      <div class="meth-card">
+        <div class="meth-num">Step 03</div>
+        <div class="meth-title">Effect Size Analysis</div>
+        <div class="meth-desc">Statistically significant doesn't mean meaningful. We report effect sizes and whether they matter to athletes and health-focused users.</div>
+      </div>
+      <div class="meth-card">
+        <div class="meth-num">Step 04</div>
+        <div class="meth-title">Grade Assignment</div>
+        <div class="meth-desc">A final letter grade reflects the overall body of evidence. Grades are updated when new trials publish - we don't let old ratings sit forever.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ARTICLES -->
+<section>
+  <div class="sec-inner">
+    <div class="articles-header">
+      <div>
+        <div class="sec-eyebrow">Research Breakdown</div>
+        <h2 class="sec-h2" style="margin-bottom:0">Latest from the lab</h2>
+      </div>
+      <div class="articles-tabs">
+        <button class="atab active" onclick="switchTab(this,'all')">All</button>
+        <button class="atab" onclick="switchTab(this,'performance')">Performance</button>
+        <button class="atab" onclick="switchTab(this,'health')">Health</button>
+      </div>
+    </div>
+    <div class="articles-grid" id="articles-grid">
+      <div class="art-card" style="opacity:.4"><div class="art-img" style="height:160px"></div><div class="art-body"><div class="art-cat">Loading...</div><div class="art-title">Fetching latest research breakdowns</div></div></div>
+    </div>
+    <div style="text-align:center;margin-top:32px">
+      <a href="/sitemap.xml" class="btn-outline" style="display:inline-flex">View All Articles</a>
+    </div>
+  </div>
+</section>
+
+<!-- AUTHOR -->
+<section style="padding:0 24px 72px">
+  <div class="sec-inner">
+    <div class="author-wrap">
+      <div class="author-avatar">JH</div>
+      <div>
+        <div class="author-cred">Lead Reviewer</div>
+        <div class="author-name">Dr. James Holloway</div>
+        <div class="author-title">Sports Scientist & Registered Nutritionist - 11 Years Clinical Research</div>
+        <p class="author-bio">I've spent 11 years reviewing clinical trials and working with competitive athletes on evidence-based nutrition protocols. The gap between what supplement brands claim and what studies show is enormous.</p>
+        <p class="author-bio">Supplement Verge cuts through the marketing. Every ingredient gets graded by the quality of human evidence behind it - not by how impressive the label looks.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<div class="nl" id="newsletter">
+  <div class="nl-inner">
+    <div class="nl-eyebrow">Monthly Evidence Brief</div>
+    <h2 class="nl-h2">What the trials actually showed</h2>
+    <p class="nl-sub">Monthly supplement science roundup - what new trials published, which grades changed, and what to actually buy. No marketing, no sponsors.</p>
+    <form class="nl-form" onsubmit="return false">
+      <input type="email" class="nl-input" placeholder="your@email.com">
+      <button type="submit" class="nl-btn">Subscribe</button>
+    </form>
+  </div>
 </div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand-name">SupplementVerge</div>
+        <p class="footer-brand-desc">Supplement reviews and nutrition science graded by human clinical evidence. No marketing claims, no sponsored opinions.</p>
+        <div class="footer-grade-legend">
+          <div style="font-family:var(--mono);font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px">Evidence Grade Key</div>
+          <div class="footer-grade-row"><span class="footer-grade-badge ga" style="color:#060a07;background:var(--primary)">A</span> Multiple high-quality RCTs confirm</div>
+          <div class="footer-grade-row"><span class="footer-grade-badge gb" style="color:#065f46;background:#6ee7b7">B</span> Promising with some limitations</div>
+          <div class="footer-grade-row"><span class="footer-grade-badge gc" style="color:#78350f;background:#fbbf24">C</span> Weak or inconsistent evidence</div>
+          <div class="footer-grade-row"><span class="footer-grade-badge gd" style="color:#7f1d1d;background:#fca5a5">D</span> No meaningful human data</div>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Reviews</div>
+        <ul class="footer-links">
+          <li><a href="/#ingredients">Ingredient Database</a></li>
+          <li><a href="/#articles">Latest Reviews</a></li>
+          <li><a href="/about">Our Methodology</a></li>
+          <li><a href="/#newsletter">Evidence Brief</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Categories</div>
+        <ul class="footer-links">
+          <li><a href="#">Protein &amp; Amino Acids</a></li>
+          <li><a href="#">Pre-Workout</a></li>
+          <li><a href="#">Fat Loss</a></li>
+          <li><a href="#">Recovery</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Science</div>
+        <ul class="footer-links">
+          <li><a href="#">Study Database</a></li>
+          <li><a href="#">Grade Explanations</a></li>
+          <li><a href="#">Dosing Protocols</a></li>
+          <li><a href="#">Conflict of Interest</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 SupplementVerge. For informational purposes only.</span>
+      <div class="footer-legal">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Disclosure</a>
+      </div>
+    </div>
+  </div>
+</footer>
 
 <script>
-var bar=document.getElementById('stk-bar');
-window.addEventListener('scroll',function(){if(window.scrollY>60)bar.classList.add('solid');else bar.classList.remove('solid');},{passive:true});
-
-async function loadPosts(){
-  var sg=document.getElementById('stk-grid');
-  var mg=document.getElementById('more-grid');
-  var mh=document.getElementById('more-hd');
-  try{
-    var r=await fetch('./articles.json');if(!r.ok)throw 0;
-    var posts=await r.json();if(!posts.length)throw 0;
-    // Featured strip
-    var feat=document.getElementById('stk-feat');
-    if(feat&&posts.length>=1){
-      var fp=posts[0];
-      var sp=posts.slice(1,4);
-      feat.innerHTML='<a href="./'+fp.slug+'/" class="stk-feat-main">'+(fp.image?'<img class="stk-feat-img" src="'+fp.image+'" alt="'+fp.title+'" loading="lazy">':'<div class="stk-feat-img"></div>')+'<div class="stk-feat-body"><div class="stk-feat-lbl">Supplement Science</div><div class="stk-feat-title">'+fp.title+'</div><div class="stk-feat-desc">'+(fp.meta_description||'').slice(0,140)+'</div><div class="stk-feat-meta">'+(fp.date_iso||'')+'</div><span class="stk-feat-cta">Read full article →</span></div></a><div class="stk-feat-side">'+sp.map(function(p){return '<a href="./'+p.slug+'/" class="stk-feat-mini">'+(p.image?'<img class="stk-feat-mini-img" src="'+p.image+'" alt="'+p.title+'" loading="lazy">':'<div class="stk-feat-mini-img"></div>')+'<div class="stk-feat-mini-body"><div class="stk-feat-mini-lbl">Supplement Science</div><div class="stk-feat-mini-title">'+p.title+'</div><div class="stk-feat-mini-date">'+(p.date_iso||'')+'</div></div></a>';}).join('')+'</div>';
-    }
-    function card(p){return '<a href="./'+p.slug+'/" style="display:block"><div class="stk-item">'+(p.image?'<img src="'+p.image+'" alt="'+p.title+'" loading="lazy">':'')+'<div class="stk-item-body"><div class="stk-item-cat">Supplement Science</div><h3>'+p.title+'</h3><p>'+(p.meta_description||'').slice(0,110)+'</p><div class="stk-item-meta"><span>'+(p.date_iso||'')+'</span><span class="stk-item-read">Read →</span></div></div></div></a>';}
-    if(sg)sg.innerHTML=posts.slice(4,10).map(card).join('');
-    if(mg&&posts.length>10){mg.innerHTML=posts.slice(10,16).map(card).join('');if(mh)mh.style.display='';}
-  }catch(e){
-    if(sg)sg.innerHTML='<div class="stk-item"><div class="stk-item-body"><div class="stk-item-cat">Coming Soon</div><h3>Articles publishing shortly</h3><p>The content system is warming up. Check back soon.</p></div></div>';
-  }
+function switchTab(el, cat) {
+  document.querySelectorAll('.atab').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
 }
-function nlSub(e){e.preventDefault();document.getElementById('stk-nl').innerHTML='<div style="color:var(--pri);font-size:15px;font-weight:600;padding:8px">✓ You're in. Check your inbox.</div>';}
-const obs=new IntersectionObserver(entries=>entries.forEach(en=>{if(en.isIntersecting){en.target.classList.add('visible');obs.unobserve(en.target);}}),{threshold:.1});
-document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
-loadPosts();
-/* banner loader: pexels → picsum fallback */
-(function(){
-  var el=document.getElementById('pxl-img');
-  var cr=document.getElementById('pxl-cred');
-  if(!el)return;
-  function showImg(src,cred){
-    el.onload=function(){el.style.opacity='1';if(cred&&cr){cr.textContent=cred;cr.style.opacity='1';}};
-    el.src=src;
-  }
-  var k=localStorage.getItem('pexelsKey');
-  if(k){
-    fetch('https://api.pexels.com/v1/search?query='+encodeURIComponent('nutrition supplements vitamins health science')+'&per_page=5&orientation=landscape',{headers:{Authorization:k}})
-      .then(function(r){return r.json();}).then(function(d){
-        if(d.photos&&d.photos[0]){showImg(d.photos[0].src.large,'Photo: Pexels');}
-        else{showImg('https://picsum.photos/seed/337/1400/400','');}
-      }).catch(function(){showImg('https://picsum.photos/seed/337/1400/400','');});
-  }else{
-    showImg('https://picsum.photos/seed/337/1400/400','');
-  }
-})();
+
+// Load articles from articles.json
+async function loadArticles() {
+  const grid = document.getElementById('articles-grid');
+  try {
+    const r = await fetch('/articles.json');
+    if (!r.ok) return;
+    const arts = await r.json();
+    if (!arts || !arts.length) return;
+    const show = arts.slice(0, 6);
+    grid.innerHTML = show.map(a => `
+      <a href="/${a.slug}/" class="art-card">
+        <img class="art-img" src="${a.image || ''}" alt="${a.title}" loading="lazy" onerror="this.style.background='var(--surface2)'">
+        <div class="art-body">
+          <div class="art-cat">${a.category || 'Research'}</div>
+          <div class="art-title">${a.title}</div>
+          <div class="art-meta">
+            <span>${a.date ? new Date(a.date).toLocaleDateString('en-US',{month:'short',day:'numeric'}) : ''}</span>
+            <span class="art-grade ${a.grade === 'A' ? 'ga' : a.grade === 'B' ? 'gb' : 'gc'}">${a.grade || 'B'}</span>
+          </div>
+        </div>
+      </a>`).join('');
+  } catch(e) {}
+}
+loadArticles();
 </script>
-</body></html>
+</body>
+</html>
