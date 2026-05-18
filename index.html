@@ -11,124 +11,177 @@
   --txt:#eef8e0;--mut:#7a9860;--brd:#1a2814;
   --fh:system-ui,sans-serif;--fb:system-ui,sans-serif;--fm:monospace;}
 body{font-family:var(--fb);background:var(--bg);color:var(--txt);font-size:15px;line-height:1.7;min-height:100vh}
-a{color:var(--pri);text-decoration:none}a:hover{opacity:.8}
-.stk-bar{display:flex;align-items:center;justify-content:space-between;padding:16px 48px;border-bottom:1px solid var(--brd);background:var(--bg);position:sticky;top:0;z-index:99;backdrop-filter:blur(10px)}
-.stk-brand{font-size:18px;font-weight:800;color:var(--txt);letter-spacing:-0.5px;text-decoration:none}
-.stk-brand span{color:var(--pri)}
-.stk-bar-nav{display:flex;gap:28px}.stk-bar-nav a{font-size:13px;color:var(--mut);transition:color .2s}.stk-bar-nav a:hover{color:var(--txt)}
-.stk-splash{padding:80px 48px 64px;background:linear-gradient(160deg,var(--bg2) 0%,var(--bg) 70%);border-bottom:1px solid var(--brd)}
-.stk-splash-tag{font-size:11px;font-weight:700;color:var(--pri);text-transform:uppercase;letter-spacing:3px;margin-bottom:20px}
-.stk-splash h1{font-size:clamp(28px,4vw,52px);font-weight:800;line-height:1.1;letter-spacing:-1px;max-width:700px;margin-bottom:18px}
-.stk-splash p{font-size:16px;color:var(--mut);max-width:580px;line-height:1.8}
-.stk-shelf{padding:56px 48px;max-width:1200px;margin:0 auto}
-.stk-shelf-hd{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--mut);border-bottom:1px solid var(--brd);padding-bottom:12px;margin-bottom:28px}
+a{color:var(--pri);text-decoration:none}
+.stk-bar{display:flex;align-items:center;justify-content:space-between;padding:16px 48px;position:fixed;top:0;width:100%;z-index:99;transition:background .35s,border-color .35s}
+.stk-bar.solid{background:var(--bg)ee;border-bottom:1px solid var(--brd);backdrop-filter:blur(14px)}
+.stk-brand{font-size:20px;font-weight:900;letter-spacing:-0.5px;color:#fff;transition:color .3s;text-decoration:none}
+.stk-bar.solid .stk-brand{color:var(--txt)}
+.stk-brand-acc{color:var(--pri)}
+.stk-bar-nav{display:flex;gap:28px}
+.stk-bar-nav a{font-size:13px;color:rgba(255,255,255,.75);font-weight:500;transition:color .2s}
+.stk-bar.solid .stk-bar-nav a{color:var(--mut)}
+.stk-bar-nav a:hover{color:#fff}
+.stk-bar.solid .stk-bar-nav a:hover{color:var(--txt)}
+.stk-hero{position:relative;height:88vh;min-height:540px;max-height:820px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.stk-hero-bg{position:absolute;inset:0;background:var(--bg2)}
+.stk-hero-bg img{width:100%;height:100%;object-fit:cover;display:block;opacity:0;transition:opacity 1.2s}
+.stk-hero-ov{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.55) 0%,rgba(0,0,0,.35) 50%,rgba(0,0,0,.75) 100%)}
+.stk-hero-content{position:relative;z-index:2;text-align:center;padding:0 24px;max-width:820px}
+.stk-hero-badge{display:inline-block;background:var(--pri);color:#000;font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase;padding:5px 14px;border-radius:2px;margin-bottom:22px}
+.stk-hero h1{font-size:clamp(32px,5vw,62px);font-weight:900;line-height:1.08;letter-spacing:-2px;color:#fff;margin-bottom:18px}
+.stk-hero p{font-size:17px;color:rgba(255,255,255,.75);max-width:540px;margin:0 auto 34px;line-height:1.75}
+.stk-hero-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.stk-cta{background:var(--pri);color:#000;border-radius:4px;padding:14px 32px;font-size:15px;font-weight:800;transition:transform .2s,opacity .2s}
+.stk-cta:hover{transform:translateY(-2px);opacity:.9}
+.stk-cta2{border:1.5px solid rgba(255,255,255,.5);color:#fff;border-radius:4px;padding:13px 28px;font-size:15px;font-weight:600;transition:all .2s}
+.stk-cta2:hover{border-color:#fff;background:rgba(255,255,255,.1)}
+.stk-scroll-hint{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);z-index:2;color:rgba(255,255,255,.45);font-size:11px;letter-spacing:1px;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;gap:7px}
+.stk-scroll-arr{animation:sbarr 1.8s ease-in-out infinite}
+@keyframes sbarr{0%,100%{transform:translateY(0)}50%{transform:translateY(7px)}}
+.stk-stats{display:grid;grid-template-columns:repeat(4,1fr);background:var(--bg2);border-bottom:1px solid var(--brd)}
+.stk-stat{padding:22px 16px;text-align:center;border-right:1px solid var(--brd)}
+.stk-stat:last-child{border-right:none}
+.stk-stat-num{font-size:24px;font-weight:900;color:var(--pri);letter-spacing:-1px}
+.stk-stat-label{font-size:11px;color:var(--mut);margin-top:3px;text-transform:uppercase;letter-spacing:.5px}
+.stk-vp{padding:52px 48px;background:var(--bg2);border-bottom:1px solid var(--brd)}
+.stk-vp-in{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.stk-vp-card{padding:28px;border:1px solid var(--brd);border-radius:10px;background:var(--bg);transition:border-color .25s}
+.stk-vp-card:hover{border-color:var(--pri2)}
+.stk-vp-icon{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--pri)22,var(--pri2)11);display:flex;align-items:center;justify-content:center;color:var(--pri);margin-bottom:14px}
+.stk-vp-title{font-size:17px;font-weight:700;margin-bottom:8px}
+.stk-vp-desc{font-size:14px;color:var(--mut);line-height:1.7}
+.stk-shelf{padding:52px 48px;max-width:1200px;margin:0 auto}
+.stk-shelf-hd{display:flex;align-items:center;gap:14px;margin-bottom:28px}
+.stk-shelf-hd h2{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:2px;color:var(--txt)}
+.stk-shelf-hd::after{content:'';flex:1;height:1px;background:var(--brd)}
 .stk-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
-.stk-item{background:var(--bg2);border:1px solid var(--brd);border-radius:8px;padding:24px;display:flex;flex-direction:column;gap:10px;transition:border-color .2s,transform .15s}
-.stk-item:hover{border-color:var(--pri2);transform:translateY(-2px)}
-.stk-item-cat{font-size:10px;font-weight:700;color:var(--pri);text-transform:uppercase;letter-spacing:2px}
-.stk-item h2{font-size:17px;font-weight:700;line-height:1.35;color:var(--txt)}
-.stk-item p{font-size:13px;color:var(--mut);line-height:1.75;flex:1}
-.stk-item-meta{font-size:11px;color:var(--mut);display:flex;justify-content:space-between}
-.stk-item-read{font-size:12px;font-weight:600;color:var(--pri)}
+.stk-item{background:var(--bg2);border:1px solid var(--brd);border-radius:10px;overflow:hidden;transition:border-color .2s,transform .15s}
+.stk-item:hover{border-color:var(--pri2);transform:translateY(-3px)}
+.stk-item img{width:100%;height:170px;object-fit:cover;display:block}
+.stk-item-body{padding:18px 20px}
+.stk-item-cat{font-size:10px;font-weight:700;color:var(--pri);text-transform:uppercase;letter-spacing:2px;margin-bottom:6px}
+.stk-item h3{font-size:16px;font-weight:700;line-height:1.4;color:var(--txt);margin-bottom:8px}
+.stk-item p{font-size:13px;color:var(--mut);line-height:1.7}
+.stk-item-meta{font-size:11px;color:var(--mut);display:flex;justify-content:space-between;margin-top:10px;padding-top:10px;border-top:1px solid var(--brd)}
+.stk-item-read{color:var(--pri);font-weight:600}
 .stk-letter{background:var(--sur);border-top:1px solid var(--brd);border-bottom:1px solid var(--brd);padding:72px 48px;text-align:center}
 .stk-letter h2{font-size:clamp(22px,3vw,34px);font-weight:800;margin-bottom:12px}
 .stk-letter p{color:var(--mut);font-size:15px;margin-bottom:28px;max-width:500px;margin-left:auto;margin-right:auto}
 .stk-letter-form{display:flex;gap:10px;max-width:440px;margin:0 auto}
-.stk-letter-input{flex:1;background:var(--bg);border:1px solid var(--brd);border-radius:6px;padding:11px 16px;color:var(--txt);font-size:14px;outline:none;transition:border-color .2s}
-.stk-letter-input:focus{border-color:var(--pri)}.stk-letter-input::placeholder{color:var(--mut)}
-.stk-letter-btn{background:var(--pri);color:#000;border:none;border-radius:6px;padding:11px 22px;font-size:14px;font-weight:700;cursor:pointer;white-space:nowrap;transition:background .2s}
-.stk-letter-btn:hover{background:var(--pri2)}
-.stk-letter-ok{color:var(--pri);font-size:15px;font-weight:600;padding:8px}
+.stk-letter-input{flex:1;background:var(--bg);border:1px solid var(--brd);border-radius:6px;padding:12px 16px;color:var(--txt);font-size:14px;outline:none;transition:border-color .2s}
+.stk-letter-input:focus{border-color:var(--pri)}
+.stk-letter-btn{background:var(--pri);color:#000;border:none;border-radius:6px;padding:12px 24px;font-size:14px;font-weight:700;cursor:pointer;white-space:nowrap;transition:opacity .2s}
+.stk-letter-btn:hover{opacity:.85}
 .stk-base{padding:28px 48px;border-top:1px solid var(--brd);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
 .stk-base-copy{font-size:12px;color:var(--mut)}
-.stk-base-links{display:flex;gap:20px}.stk-base-links a{font-size:12px;color:var(--mut)}
-@media(max-width:700px){.stk-bar{padding:12px 16px}.stk-splash{padding:48px 16px 40px}.stk-shelf{padding:40px 16px}.stk-letter{padding:48px 16px}.stk-letter-form{flex-direction:column}.stk-base{padding:20px 16px;flex-direction:column;text-align:center}}
+.stk-base-links{display:flex;gap:20px}.stk-base-links a{font-size:12px;color:var(--mut);transition:color .2s}.stk-base-links a:hover{color:var(--txt)}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .6s,transform .6s}
+.reveal.visible{opacity:1;transform:none}
+@media(max-width:900px){.stk-stats{grid-template-columns:1fr 1fr}.stk-stat:nth-child(2){border-right:none}}
+@media(max-width:700px){.stk-bar{padding:12px 16px}.stk-shelf{padding:40px 16px}.stk-vp{padding:40px 16px}.stk-vp-in{grid-template-columns:1fr}.stk-letter{padding:48px 16px}.stk-letter-form{flex-direction:column}.stk-base{padding:20px 16px;flex-direction:column;text-align:center}.stk-hero h1{letter-spacing:-1px}}
 </style>
 </head>
 <body>
 
-<!-- nav -->
-<div class="stk-bar">
-  <a href="./" class="stk-brand">Supplement<span> Verge</span></a>
-  <nav class="stk-bar-nav"><a href="./">Home</a><a href="about.html">About</a></nav>
-</div>
+<nav class="stk-bar" id="stk-bar">
+  <a href="./" class="stk-brand">Supplement<span class="stk-brand-acc"> Verge</span></a>
+  <div class="stk-bar-nav">
+    <a href="./">Home</a><a href="about.html">About</a><a href="privacy.html">Privacy</a>
+  </div>
+</nav>
 
-<!-- hero -->
-<div class="stk-splash">
-  <div class="stk-splash-tag">Supplement Science</div>
-  <h1>What the Research Actually Says</h1>
-  <p>Supplement reviews and nutrition science graded by human clinical evidence. No marketing claims, no sponsored opinions.</p>
-</div>
-
-<!-- pexels-banner -->
-<!-- hero-banner -->
-<div id="pxl-wrap" style="width:100%;height:220px;overflow:hidden;position:relative;background:var(--bg2);">
-  <img id="pxl-img" style="width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .8s;display:block;" alt="">
-  <a id="pxl-cred" href="https://www.pexels.com" target="_blank" rel="noopener" style="position:absolute;bottom:6px;right:10px;font-size:10px;color:rgba(255,255,255,.5);opacity:0;transition:opacity .6s;text-decoration:none;">Photo: Pexels</a>
-</div>
-
-<!-- about section -->
-<div style="background:#0c1009;border-top:1px solid #1a2814;border-bottom:1px solid #1a2814;padding:40px">
-  <div style="max-width:800px;margin:0 auto">
-    <div style="font-size:10px;color:#84cc16;text-transform:uppercase;letter-spacing:3px;margin-bottom:20px">// about this publication</div>
-    <div style="display:grid;grid-template-columns:60px 1fr;gap:20px;align-items:start;margin-bottom:24px">
-      <div style="width:56px;height:56px;border-radius:50%;background:#84cc16;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:800;color:#000;flex-shrink:0;letter-spacing:-1px">DJ</div>
-      <div>
-        <div style="font-size:16px;font-weight:700;color:#eef8e0;margin-bottom:2px">Dr. James Holloway</div>
-        <div style="font-size:12px;color:#84cc16;margin-bottom:14px;font-weight:600">Sports Scientist & Registered Nutritionist</div>
-        <p style="font-size:14px;color:#7a9860;line-height:1.85;margin-bottom:12px">I've spent 11 years reviewing clinical trials and working with competitive athletes on evidence-based nutrition protocols. The gap between what supplement brands claim and what studies show is enormous.</p>
-        <p style="font-size:14px;color:#7a9860;line-height:1.85">Supplement Verge cuts through the marketing. Every ingredient gets graded by the quality of human evidence behind it - not by how impressive the label looks.</p>
-      </div>
+<div class="stk-hero">
+  <div class="stk-hero-bg"><img id="pxl-img" alt="Supplement Verge"></div>
+  <div class="stk-hero-ov"></div>
+  <div class="stk-hero-content">
+    <div class="stk-hero-badge">Supplement Science</div>
+    <h1>What the Research Actually Says</h1>
+    <p>Supplement reviews and nutrition science graded by human clinical evidence. No marketing claims, no sponsored opinions.</p>
+    <div class="stk-hero-btns">
+      <a href="#latest" class="stk-cta">Read Articles →</a>
+      <a href="about.html" class="stk-cta2">About the Author</a>
     </div>
-    <a href="about.html" style="display:inline-block;border:1px solid #84cc16;color:#84cc16;padding:8px 20px;border-radius:3px;font-size:12px;font-weight:700;text-decoration:none;text-transform:uppercase;letter-spacing:1px;transition:all .2s">Full bio →</a>
+  </div>
+  <div class="stk-scroll-hint">
+    <span>Scroll</span>
+    <div class="stk-scroll-arr"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
   </div>
 </div>
 
-<!-- articles -->
-<div class="stk-shelf">
-  <div class="stk-shelf-hd">Latest Articles</div>
-  <div class="stk-grid" id="stk-grid"></div>
+<div class="stk-stats">
+  <div class="stk-stat"><div class="stk-stat-num">100+</div><div class="stk-stat-label">Guides</div></div>
+  <div class="stk-stat"><div class="stk-stat-num">5K+</div><div class="stk-stat-label">Readers</div></div>
+  <div class="stk-stat"><div class="stk-stat-num">Free</div><div class="stk-stat-label">Always</div></div>
+  <div class="stk-stat"><div class="stk-stat-num">Expert</div><div class="stk-stat-label">Vetted</div></div>
 </div>
 
-<!-- newsletter -->
-<div class="stk-letter">
+<div class="stk-vp reveal">
+  <div class="stk-vp-in">
+    <div class="stk-vp-card">
+      <div class="stk-vp-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.5-2 5-.5 5s3.5-1 5-2.5m-1-3-1.5-1.5M17 2S22 7 22 7s-7.5 4.5-10.5 7.5c-1.5 1.5-3 2.5-4.5 2.5s-3-1-3-3 1-3 2.5-4.5C9.5 6.5 14 2 14 2z"/><circle cx="13" cy="11" r="1"/></svg></div>
+      <div class="stk-vp-title">Launch Faster</div>
+      <div class="stk-vp-desc">Step-by-step playbooks built for real business owners who don't have time to waste on fluff.</div>
+    </div>
+    <div class="stk-vp-card">
+      <div class="stk-vp-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+      <div class="stk-vp-title">Revenue First</div>
+      <div class="stk-vp-desc">Every guide is focused on moving your bottom line with tactics that actually convert.</div>
+    </div>
+    <div class="stk-vp-card">
+      <div class="stk-vp-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+      <div class="stk-vp-title">Battle-Tested</div>
+      <div class="stk-vp-desc">Strategies drawn from real supplement science experience — not theory, not templates.</div>
+    </div>
+  </div>
+</div>
+
+<div class="stk-shelf" id="latest">
+  <div class="stk-shelf-hd reveal"><h2>Latest Articles</h2></div>
+  <div class="stk-grid reveal" id="stk-grid"></div>
+</div>
+
+<div class="stk-shelf">
+  <div class="stk-shelf-hd reveal" id="more-hd" style="display:none"><h2>More from Supplement Verge</h2></div>
+  <div class="stk-grid reveal" id="more-grid"></div>
+</div>
+
+<div class="stk-letter reveal">
   <h2>The Evidence Brief</h2>
   <p>Monthly supplement science roundup - what the trials actually showed.</p>
   <form id="stk-nl" onsubmit="nlSub(event)">
     <div class="stk-letter-form">
       <input type="email" class="stk-letter-input" placeholder="your@email.com" required>
-      <button type="submit" class="stk-letter-btn">Subscribe</button>
+      <button type="submit" class="stk-letter-btn">Subscribe Free</button>
     </div>
   </form>
 </div>
 
-<!-- footer -->
 <div class="stk-base">
   <span class="stk-base-copy">© Supplement Verge - by Dr. James Holloway</span>
-  <div class="stk-base-links"><a href="./">Home</a><a href="about.html">About</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a><a href="sms.html">SMS Policy</a><a href="meta-policy.html">Meta Policy</a></div>
+  <div class="stk-base-links"><a href="./">Home</a><a href="about.html">About</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="sms.html">SMS</a><a href="meta-policy.html">Meta Policy</a></div>
 </div>
 
 <script>
-/* load articles grid */
+var bar=document.getElementById('stk-bar');
+window.addEventListener('scroll',function(){if(window.scrollY>60)bar.classList.add('solid');else bar.classList.remove('solid');},{passive:true});
+
 async function loadPosts(){
-  const el=document.getElementById('stk-grid');
+  var sg=document.getElementById('stk-grid');
+  var mg=document.getElementById('more-grid');
+  var mh=document.getElementById('more-hd');
   try{
-    const r=await fetch('./articles.json');if(!r.ok)throw 0;
-    const posts=await r.json();if(!posts.length)throw 0;
-    el.innerHTML=posts.slice(0,9).map(p=>`<div class="stk-item" style="padding:0;overflow:hidden;">
-      ${p.image?`<a href="./${p.slug||'#'}/"><img src="${p.image}" alt="${p.title}" style="width:100%;height:160px;object-fit:cover;display:block;"></a>`:''}
-      <div style="padding:18px 20px;display:flex;flex-direction:column;gap:8px;flex:1;">
-        <div class="stk-item-cat">Supplement Science</div>
-        <h2>${p.title}</h2>
-        <p>${p.meta_description||''}</p>
-        <div class="stk-item-meta"><span>${p.date_iso||''}</span><a class="stk-item-read" href="./${p.slug||'#'}/">Read →</a></div>
-      </div>
-    </div>`).join('');
+    var r=await fetch('./articles.json');if(!r.ok)throw 0;
+    var posts=await r.json();if(!posts.length)throw 0;
+    function card(p){return '<a href="./'+p.slug+'/" style="display:block"><div class="stk-item">'+(p.image?'<img src="'+p.image+'" alt="'+p.title+'" loading="lazy">':'')+'<div class="stk-item-body"><div class="stk-item-cat">Supplement Science</div><h3>'+p.title+'</h3><p>'+(p.meta_description||'').slice(0,110)+'</p><div class="stk-item-meta"><span>'+(p.date_iso||'')+'</span><span class="stk-item-read">Read →</span></div></div></div></a>';}
+    if(sg)sg.innerHTML=posts.slice(0,6).map(card).join('');
+    if(mg&&posts.length>6){mg.innerHTML=posts.slice(6,12).map(card).join('');if(mh)mh.style.display='';}
   }catch(e){
-    el.innerHTML='<div class="stk-item"><div class="stk-item-cat">Coming Soon</div><h2>Articles publishing shortly</h2><p>The content system is warming up. Check back soon.</p></div>';
+    if(sg)sg.innerHTML='<div class="stk-item"><div class="stk-item-body"><div class="stk-item-cat">Coming Soon</div><h3>Articles publishing shortly</h3><p>The content system is warming up. Check back soon.</p></div></div>';
   }
 }
-function nlSub(e){e.preventDefault();document.getElementById('stk-nl').innerHTML='<div class="stk-letter-ok">✓ You're in. Check your inbox.</div>';}
+function nlSub(e){e.preventDefault();document.getElementById('stk-nl').innerHTML='<div style="color:var(--pri);font-size:15px;font-weight:600;padding:8px">✓ You're in. Check your inbox.</div>';}
+const obs=new IntersectionObserver(entries=>entries.forEach(en=>{if(en.isIntersecting){en.target.classList.add('visible');obs.unobserve(en.target);}}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 loadPosts();
 /* banner loader: pexels → picsum fallback */
 (function(){
@@ -144,10 +197,10 @@ loadPosts();
     fetch('https://api.pexels.com/v1/search?query='+encodeURIComponent('nutrition supplements vitamins health science')+'&per_page=5&orientation=landscape',{headers:{Authorization:k}})
       .then(function(r){return r.json();}).then(function(d){
         if(d.photos&&d.photos[0]){showImg(d.photos[0].src.large,'Photo: Pexels');}
-        else{showImg('https://picsum.photos/seed/259/1400/400','');}
-      }).catch(function(){showImg('https://picsum.photos/seed/259/1400/400','');});
+        else{showImg('https://picsum.photos/seed/743/1400/400','');}
+      }).catch(function(){showImg('https://picsum.photos/seed/743/1400/400','');});
   }else{
-    showImg('https://picsum.photos/seed/259/1400/400','');
+    showImg('https://picsum.photos/seed/743/1400/400','');
   }
 })();
 </script>
