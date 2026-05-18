@@ -50,6 +50,30 @@ a{color:var(--pri);text-decoration:none}
 .stk-vp-icon{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--pri)22,var(--pri2)11);display:flex;align-items:center;justify-content:center;color:var(--pri);margin-bottom:14px}
 .stk-vp-title{font-size:17px;font-weight:700;margin-bottom:8px}
 .stk-vp-desc{font-size:14px;color:var(--mut);line-height:1.7}
+/* featured strip */
+.stk-feat-wrap{max-width:1200px;margin:0 auto;padding:40px 48px 28px}
+.stk-feat-hd{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:2px;color:var(--mut);margin-bottom:20px;display:flex;align-items:center;gap:12px}.stk-feat-hd::after{content:'';flex:1;height:1px;background:var(--brd)}
+.stk-feat-grid{display:grid;grid-template-columns:1.65fr 1fr;gap:20px}
+.stk-feat-main{border:1px solid var(--brd);border-radius:12px;overflow:hidden;background:var(--bg2);transition:border-color .2s,transform .15s;text-decoration:none;display:block;color:inherit}.stk-feat-main:hover{border-color:var(--pri2);transform:translateY(-3px)}
+.stk-feat-img{width:100%;height:280px;object-fit:cover;display:block;background:var(--sur)}
+.stk-feat-body{padding:20px 22px}
+.stk-feat-lbl{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--pri);margin-bottom:8px}
+.stk-feat-title{font-size:clamp(16px,2.2vw,22px);font-weight:800;line-height:1.28;color:var(--txt);margin-bottom:8px}
+.stk-feat-desc{font-size:13px;color:var(--mut);line-height:1.7}
+.stk-feat-meta{font-size:11px;color:var(--mut);margin-top:10px;display:flex;gap:8px;align-items:center}
+.stk-feat-cta{display:inline-block;color:var(--pri);font-weight:700;font-size:12px;margin-top:10px}
+.stk-feat-side{display:flex;flex-direction:column;gap:12px}
+.stk-feat-mini{display:flex;gap:0;border:1px solid var(--brd);border-radius:10px;overflow:hidden;background:var(--bg2);transition:border-color .2s,transform .15s;text-decoration:none;color:inherit;align-items:stretch}.stk-feat-mini:hover{border-color:var(--pri2);transform:translateY(-2px)}
+.stk-feat-mini-img{width:86px;height:86px;object-fit:cover;flex-shrink:0;background:var(--sur)}
+.stk-feat-mini-body{padding:10px 14px;flex:1}
+.stk-feat-mini-lbl{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--pri);margin-bottom:4px}
+.stk-feat-mini-title{font-size:13px;font-weight:600;line-height:1.4;color:var(--txt)}
+.stk-feat-mini-date{font-size:10px;color:var(--mut);margin-top:4px}
+/* topics */
+.stk-topics{padding:12px 48px;background:var(--bg2);border-top:1px solid var(--brd);border-bottom:1px solid var(--brd);display:flex;align-items:center;gap:8px;overflow-x:auto;scrollbar-width:none}
+.stk-topics::-webkit-scrollbar{display:none}
+.stk-topics-lbl{font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:2px;color:var(--mut);flex-shrink:0;margin-right:4px}
+.stk-topic{flex-shrink:0;font-size:11px;font-weight:600;padding:5px 12px;border:1px solid var(--brd);border-radius:100px;color:var(--mut);cursor:pointer;transition:all .2s;white-space:nowrap}.stk-topic:hover{border-color:var(--pri);color:var(--pri);background:var(--bg)}
 .stk-shelf{padding:52px 48px;max-width:1200px;margin:0 auto}
 .stk-shelf-hd{display:flex;align-items:center;gap:14px;margin-bottom:28px}
 .stk-shelf-hd h2{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:2px;color:var(--txt)}
@@ -77,8 +101,8 @@ a{color:var(--pri);text-decoration:none}
 .stk-base-links{display:flex;gap:20px}.stk-base-links a{font-size:12px;color:var(--mut);transition:color .2s}.stk-base-links a:hover{color:var(--txt)}
 .reveal{opacity:0;transform:translateY(20px);transition:opacity .6s,transform .6s}
 .reveal.visible{opacity:1;transform:none}
-@media(max-width:900px){.stk-stats{grid-template-columns:1fr 1fr}.stk-stat:nth-child(2){border-right:none}}
-@media(max-width:700px){.stk-bar{padding:12px 16px}.stk-shelf{padding:40px 16px}.stk-vp{padding:40px 16px}.stk-vp-in{grid-template-columns:1fr}.stk-letter{padding:48px 16px}.stk-letter-form{flex-direction:column}.stk-base{padding:20px 16px;flex-direction:column;text-align:center}.stk-hero h1{letter-spacing:-1px}}
+@media(max-width:900px){.stk-stats{grid-template-columns:1fr 1fr}.stk-stat:nth-child(2){border-right:none}.stk-feat-grid{grid-template-columns:1fr}}
+@media(max-width:700px){.stk-bar{padding:12px 16px}.stk-shelf{padding:40px 16px}.stk-feat-wrap{padding:28px 16px 16px}.stk-topics{padding:12px 16px}.stk-vp{padding:40px 16px}.stk-vp-in{grid-template-columns:1fr}.stk-letter{padding:48px 16px}.stk-letter-form{flex-direction:column}.stk-base{padding:20px 16px;flex-direction:column;text-align:center}.stk-hero h1{letter-spacing:-1px}}
 </style>
 </head>
 <body>
@@ -113,6 +137,25 @@ a{color:var(--pri);text-decoration:none}
   <div class="stk-stat"><div class="stk-stat-num">5K+</div><div class="stk-stat-label">Readers</div></div>
   <div class="stk-stat"><div class="stk-stat-num">Free</div><div class="stk-stat-label">Always</div></div>
   <div class="stk-stat"><div class="stk-stat-num">Expert</div><div class="stk-stat-label">Vetted</div></div>
+</div>
+
+<!-- FEATURED ARTICLES UPFRONT -->
+<div class="stk-feat-wrap reveal">
+  <div class="stk-feat-hd">Featured</div>
+  <div class="stk-feat-grid" id="stk-feat"></div>
+</div>
+
+<!-- TOPICS STRIP -->
+<div class="stk-topics">
+  <span class="stk-topics-lbl">Topics</span>
+  <span class="stk-topic">Online Business</span>
+  <span class="stk-topic">Side Hustles</span>
+  <span class="stk-topic">E-Commerce</span>
+  <span class="stk-topic">Digital Marketing</span>
+  <span class="stk-topic">Freelancing</span>
+  <span class="stk-topic">Automation</span>
+  <span class="stk-topic">SEO</span>
+  <span class="stk-topic">Revenue Growth</span>
 </div>
 
 <div class="stk-vp reveal">
@@ -172,9 +215,16 @@ async function loadPosts(){
   try{
     var r=await fetch('./articles.json');if(!r.ok)throw 0;
     var posts=await r.json();if(!posts.length)throw 0;
+    // Featured strip
+    var feat=document.getElementById('stk-feat');
+    if(feat&&posts.length>=1){
+      var fp=posts[0];
+      var sp=posts.slice(1,4);
+      feat.innerHTML='<a href="./'+fp.slug+'/" class="stk-feat-main">'+(fp.image?'<img class="stk-feat-img" src="'+fp.image+'" alt="'+fp.title+'" loading="lazy">':'<div class="stk-feat-img"></div>')+'<div class="stk-feat-body"><div class="stk-feat-lbl">Supplement Science</div><div class="stk-feat-title">'+fp.title+'</div><div class="stk-feat-desc">'+(fp.meta_description||'').slice(0,140)+'</div><div class="stk-feat-meta">'+(fp.date_iso||'')+'</div><span class="stk-feat-cta">Read full article →</span></div></a><div class="stk-feat-side">'+sp.map(function(p){return '<a href="./'+p.slug+'/" class="stk-feat-mini">'+(p.image?'<img class="stk-feat-mini-img" src="'+p.image+'" alt="'+p.title+'" loading="lazy">':'<div class="stk-feat-mini-img"></div>')+'<div class="stk-feat-mini-body"><div class="stk-feat-mini-lbl">Supplement Science</div><div class="stk-feat-mini-title">'+p.title+'</div><div class="stk-feat-mini-date">'+(p.date_iso||'')+'</div></div></a>';}).join('')+'</div>';
+    }
     function card(p){return '<a href="./'+p.slug+'/" style="display:block"><div class="stk-item">'+(p.image?'<img src="'+p.image+'" alt="'+p.title+'" loading="lazy">':'')+'<div class="stk-item-body"><div class="stk-item-cat">Supplement Science</div><h3>'+p.title+'</h3><p>'+(p.meta_description||'').slice(0,110)+'</p><div class="stk-item-meta"><span>'+(p.date_iso||'')+'</span><span class="stk-item-read">Read →</span></div></div></div></a>';}
-    if(sg)sg.innerHTML=posts.slice(0,6).map(card).join('');
-    if(mg&&posts.length>6){mg.innerHTML=posts.slice(6,12).map(card).join('');if(mh)mh.style.display='';}
+    if(sg)sg.innerHTML=posts.slice(4,10).map(card).join('');
+    if(mg&&posts.length>10){mg.innerHTML=posts.slice(10,16).map(card).join('');if(mh)mh.style.display='';}
   }catch(e){
     if(sg)sg.innerHTML='<div class="stk-item"><div class="stk-item-body"><div class="stk-item-cat">Coming Soon</div><h3>Articles publishing shortly</h3><p>The content system is warming up. Check back soon.</p></div></div>';
   }
@@ -197,10 +247,10 @@ loadPosts();
     fetch('https://api.pexels.com/v1/search?query='+encodeURIComponent('nutrition supplements vitamins health science')+'&per_page=5&orientation=landscape',{headers:{Authorization:k}})
       .then(function(r){return r.json();}).then(function(d){
         if(d.photos&&d.photos[0]){showImg(d.photos[0].src.large,'Photo: Pexels');}
-        else{showImg('https://picsum.photos/seed/735/1400/400','');}
-      }).catch(function(){showImg('https://picsum.photos/seed/735/1400/400','');});
+        else{showImg('https://picsum.photos/seed/655/1400/400','');}
+      }).catch(function(){showImg('https://picsum.photos/seed/655/1400/400','');});
   }else{
-    showImg('https://picsum.photos/seed/735/1400/400','');
+    showImg('https://picsum.photos/seed/655/1400/400','');
   }
 })();
 </script>
