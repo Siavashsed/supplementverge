@@ -148,14 +148,7 @@ a{color:var(--pri);text-decoration:none}
 <!-- TOPICS STRIP -->
 <div class="stk-topics">
   <span class="stk-topics-lbl">Topics</span>
-  <span class="stk-topic">Online Business</span>
-  <span class="stk-topic">Side Hustles</span>
-  <span class="stk-topic">E-Commerce</span>
-  <span class="stk-topic">Digital Marketing</span>
-  <span class="stk-topic">Freelancing</span>
-  <span class="stk-topic">Automation</span>
-  <span class="stk-topic">SEO</span>
-  <span class="stk-topic">Revenue Growth</span>
+  <span class="stk-topic">Protein</span><span class="stk-topic">Creatine</span><span class="stk-topic">Pre-Workout</span><span class="stk-topic">Fat Loss</span><span class="stk-topic">Recovery</span><span class="stk-topic">Sleep</span><span class="stk-topic">Testosterone</span><span class="stk-topic">Evidence Grades</span>
 </div>
 
 <div class="stk-vp reveal">
@@ -247,10 +240,10 @@ loadPosts();
     fetch('https://api.pexels.com/v1/search?query='+encodeURIComponent('nutrition supplements vitamins health science')+'&per_page=5&orientation=landscape',{headers:{Authorization:k}})
       .then(function(r){return r.json();}).then(function(d){
         if(d.photos&&d.photos[0]){showImg(d.photos[0].src.large,'Photo: Pexels');}
-        else{showImg('https://picsum.photos/seed/809/1400/400','');}
-      }).catch(function(){showImg('https://picsum.photos/seed/809/1400/400','');});
+        else{showImg('https://picsum.photos/seed/337/1400/400','');}
+      }).catch(function(){showImg('https://picsum.photos/seed/337/1400/400','');});
   }else{
-    showImg('https://picsum.photos/seed/809/1400/400','');
+    showImg('https://picsum.photos/seed/337/1400/400','');
   }
 })();
 </script>
