@@ -1,245 +1,470 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>About Dr. James Holloway - Supplement Verge</title>
-<meta name="description" content="Supplement reviews graded by clinical evidence quality.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>About - Supplement Verge</title>
+<meta name="description" content="About Supplement Verge: Supplement reviews graded by clinical evidence quality.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-/* === reset === */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{  --bg:#060a07;--bg2:#0c1009;--sur:#121810;
-  --pri:#84cc16;--pri2:#65a30d;
-  --txt:#eef8e0;--mut:#7a9860;--brd:#1a2814;
-  --fh:system-ui,sans-serif;--fb:system-ui,sans-serif;--fm:monospace;}
-body{font-family:var(--fb);background:var(--bg);color:var(--txt);font-size:15px;line-height:1.7;min-height:100vh}
-a{color:var(--pri);text-decoration:none}a:hover{opacity:.8}
-/* === nav === */
-.stk-bar{display:flex;align-items:center;justify-content:space-between;padding:16px 48px;border-bottom:1px solid var(--brd);background:var(--bg);position:sticky;top:0;z-index:99}
-.stk-brand{font-size:18px;font-weight:800;color:var(--txt);letter-spacing:-0.5px;text-decoration:none}
-.stk-brand span{color:var(--pri)}.stk-bar-nav{display:flex;gap:28px}.stk-bar-nav a{font-size:13px;color:var(--mut)}.stk-bar-nav a:hover{color:var(--txt)}
-/* === author hero band === */
-.abt-hero{background:linear-gradient(135deg,var(--bg2) 0%,var(--bg) 80%);border-bottom:1px solid var(--brd);padding:56px 48px;display:flex;align-items:center;gap:36px}
-.abt-avi{width:84px;height:84px;border-radius:50%;background:var(--pri);display:flex;align-items:center;justify-content:center;font-size:28px;font-weight:800;color:#000;flex-shrink:0;border:3px solid var(--brd)}
-.abt-hero-name{font-size:clamp(22px,3vw,36px);font-weight:800;margin-bottom:6px;letter-spacing:-0.5px}
-.abt-hero-title{font-size:14px;color:var(--pri);font-weight:600}
-.abt-hero-cat{font-size:11px;color:var(--mut);margin-top:4px}
-/* === body === */
-.abt-content{max-width:740px;margin:0 auto;padding:52px 48px}
-.abt-section{margin-bottom:40px}
-.abt-section h2{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--pri);border-bottom:1px solid var(--brd);padding-bottom:10px;margin-bottom:20px}
-.abt-p{color:var(--mut);line-height:1.9;margin-bottom:14px}
-/* === highlight box === */
-.abt-highlight{background:var(--bg2);border:1px solid var(--brd);border-radius:8px;padding:20px 22px;margin-bottom:40px}
-.abt-highlight-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--pri);margin-bottom:8px}
-.abt-highlight p{font-size:14px;color:var(--txt);line-height:1.75}
-/* === newsletter === */
-.abt-nl{background:var(--bg2);border:1px solid var(--brd);border-radius:8px;padding:28px;margin-top:8px}
-.abt-nl h3{font-size:18px;font-weight:700;margin-bottom:8px}.abt-nl p{color:var(--mut);margin-bottom:18px}
-.stk-letter-form{display:flex;gap:10px;max-width:420px}
-.stk-letter-input{flex:1;background:var(--bg);border:1px solid var(--brd);border-radius:6px;padding:10px 14px;color:var(--txt);font-size:14px;outline:none;transition:border-color .2s}
-.stk-letter-input:focus{border-color:var(--pri)}.stk-letter-input::placeholder{color:var(--mut)}
-.stk-letter-btn{background:var(--pri);color:#000;border:none;border-radius:6px;padding:10px 20px;font-size:14px;font-weight:700;cursor:pointer;transition:background .2s}
-.stk-letter-btn:hover{background:var(--pri2)}.stk-letter-ok{color:var(--pri);font-weight:600;padding:6px 0}
-/* === footer === */
-.stk-base{padding:24px 48px;border-top:1px solid var(--brd);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-top:20px}
-.stk-base-copy,.stk-base-links a{font-size:12px;color:var(--mut)}.stk-base-links{display:flex;gap:20px}
-@media(max-width:700px){.stk-bar{padding:12px 16px}.abt-hero{padding:36px 16px;flex-direction:column;gap:20px}.abt-content{padding:36px 16px}.stk-letter-form{flex-direction:column}.stk-base{padding:20px 16px}}
+html{scroll-behavior:smooth}
+:root{
+  --bg:#050807;
+  --bg2:#0a0f0a;
+  --bg3:#0f1610;
+  --card:#111a12;
+  --card2:#16211a;
+  --green:#84cc16;
+  --green2:#65a30d;
+  --green3:#a3e635;
+  --teal:#14b8a6;
+  --text:#eef8e0;
+  --text2:#8aab74;
+  --text3:#3d5c3a;
+  --border:#162012;
+  --border2:rgba(132,204,22,.2);
+  --font:'IBM Plex Sans',system-ui,sans-serif;
+  --mono:'IBM Plex Mono',monospace;
+  --r:8px;
+}
+body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:14px;line-height:1.65;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+button{font-family:var(--font);cursor:pointer;border:none;background:none}
+
+/* ── NAV ── */
+.nav{position:sticky;top:0;z-index:200;background:rgba(5,8,7,.95);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:1240px;margin:0 auto;padding:0 24px;display:flex;align-items:center;height:62px;gap:0}
+.nav-logo{display:flex;align-items:center;gap:10px;margin-right:auto;flex-shrink:0}
+.nl-icon{width:32px;height:32px;background:var(--green);border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.nl-icon svg{color:#050807}
+.nl-text{font-family:var(--mono);font-size:15px;font-weight:600;color:var(--green);letter-spacing:.3px}
+.nav-links{display:flex;align-items:center;gap:2px}
+.nav-link{font-size:13px;font-weight:500;color:var(--text2);padding:6px 12px;border-radius:var(--r);transition:all .18s}
+.nav-link:hover,.nav-link.active{color:var(--text);background:var(--card)}
+.nav-cta{font-family:var(--mono);font-size:11px;font-weight:600;color:var(--bg);background:var(--green);padding:7px 16px;border-radius:6px;margin-left:10px;letter-spacing:.3px;transition:all .18s;white-space:nowrap}
+.nav-cta:hover{background:var(--green2)}
+.nav-burger{display:none;background:none;border:1px solid var(--border);color:var(--text2);padding:7px 9px;border-radius:6px;cursor:pointer;flex-shrink:0}
+@media(max-width:768px){.nav-links{display:none}.nav-burger{display:block}.nav-links.open{display:flex;flex-direction:column;position:absolute;top:62px;left:0;right:0;background:rgba(5,8,7,.98);border-bottom:1px solid var(--border);padding:12px;gap:4px;z-index:100}}
+
+/* ── EVIDENCE TICKER ── */
+.ev-bar{background:var(--bg3);border-bottom:1px solid var(--border);height:34px;display:flex;align-items:center;overflow:hidden}
+.ev-label{font-family:var(--mono);font-size:9px;font-weight:600;color:var(--bg);background:var(--green);padding:0 12px;height:100%;display:flex;align-items:center;flex-shrink:0;letter-spacing:2px;text-transform:uppercase;gap:6px}
+.ev-dot{width:5px;height:5px;border-radius:50%;background:var(--bg);animation:blink 1.3s ease infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.2}}
+.ev-viewport{flex:1;overflow:hidden}
+.ev-track{display:flex;white-space:nowrap;animation:ev-scroll 38s linear infinite}
+.ev-track:hover{animation-play-state:paused}
+@keyframes ev-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.ev-item{font-family:var(--mono);font-size:11px;display:inline-flex;align-items:center;gap:8px;padding:0 20px;border-right:1px solid var(--border);color:var(--text3)}
+.ev-g{font-weight:600;padding:1px 6px;border-radius:3px;font-size:10px;letter-spacing:.5px}
+.ga{color:var(--bg);background:var(--green)}
+.gb{color:#064e3b;background:#6ee7b7}
+.gc{color:#78350f;background:#fbbf24}
+
+/* ── HERO ── */
+.hero{padding:72px 24px 56px}
+.hero-inner{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1fr 400px;gap:60px;align-items:center}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:11px;font-weight:500;color:var(--green);background:rgba(132,204,22,.07);border:1px solid rgba(132,204,22,.18);padding:5px 14px;border-radius:20px;margin-bottom:24px;letter-spacing:.5px;text-transform:uppercase}
+.he-dot{width:6px;height:6px;border-radius:50%;background:var(--green);animation:blink 1.4s ease infinite}
+.hero-h1{font-size:clamp(30px,4.5vw,52px);font-weight:700;line-height:1.08;letter-spacing:-.8px;color:var(--text);margin-bottom:20px}
+.hero-h1 em{font-style:normal;color:var(--green)}
+.hero-sub{font-size:16px;color:var(--text2);line-height:1.75;margin-bottom:36px;max-width:520px}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn-primary{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:12px;font-weight:600;color:var(--bg);background:var(--green);padding:12px 22px;border-radius:var(--r);transition:all .2s;cursor:pointer;border:none}
+.btn-primary:hover{background:var(--green2);transform:translateY(-1px)}
+.btn-outline{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:500;color:var(--text2);border:1px solid var(--border2);padding:12px 22px;border-radius:var(--r);transition:all .2s}
+.btn-outline:hover{color:var(--text);border-color:var(--green)}
+/* Grade panel */
+.grade-panel{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden}
+.gp-head{background:var(--card2);padding:14px 18px;display:flex;align-items:center;gap:9px;border-bottom:1px solid var(--border)}
+.gp-title{font-family:var(--mono);font-size:11px;font-weight:600;color:var(--green);text-transform:uppercase;letter-spacing:1px}
+.grade-rows{}
+.gr{display:grid;grid-template-columns:1fr auto auto;gap:10px;align-items:center;padding:11px 18px;border-bottom:1px solid var(--border);transition:background .18s}
+.gr:last-child{border-bottom:none}
+.gr:hover{background:var(--card2)}
+.gr-name{font-size:13px;font-weight:500;color:var(--text)}
+.gr-dose{font-family:var(--mono);font-size:10px;color:var(--text3)}
+.gr-badge{font-family:var(--mono);font-size:10px;font-weight:700;padding:3px 9px;border-radius:4px;letter-spacing:.5px}
+@media(max-width:900px){.hero-inner{grid-template-columns:1fr}.grade-panel{display:none}}
+
+/* ── STATS STRIP ── */
+.stats{background:var(--card);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.stats-inner{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border)}
+.stat{background:var(--card);padding:22px 28px;text-align:center}
+.stat-val{font-family:var(--mono);font-size:26px;font-weight:600;color:var(--green);line-height:1;margin-bottom:5px}
+.stat-lbl{font-size:11px;color:var(--text3);text-transform:uppercase;letter-spacing:1px}
+@media(max-width:640px){.stats-inner{grid-template-columns:repeat(2,1fr)}}
+
+/* ── SECTIONS ── */
+.section{padding:72px 24px}
+.sec-inner{max-width:1240px;margin:0 auto}
+.eyebrow{font-family:var(--mono);font-size:11px;font-weight:500;color:var(--green);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.eyebrow::before{content:'';width:18px;height:1px;background:var(--green);flex-shrink:0}
+.sec-h2{font-size:clamp(22px,3vw,34px);font-weight:700;letter-spacing:-.4px;line-height:1.15;margin-bottom:12px}
+.sec-p{font-size:14px;color:var(--text2);max-width:580px;line-height:1.75}
+
+/* ── INGREDIENT GRID ── */
+.ing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);margin-top:36px;border-radius:12px;overflow:hidden;border:1px solid var(--border)}
+.ing-card{background:var(--card);padding:22px;transition:background .18s;position:relative;overflow:hidden}
+.ing-card::before{content:'';position:absolute;top:0;left:0;bottom:0;width:3px}
+.ing-card.ga-border::before{background:var(--green)}
+.ing-card.gb-border::before{background:#6ee7b7}
+.ing-card.gc-border::before{background:#fbbf24}
+.ing-card:hover{background:var(--card2)}
+.ing-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px;padding-left:10px}
+.ing-name{font-size:14px;font-weight:600;color:var(--text)}
+.ing-badge{font-family:var(--mono);font-size:11px;font-weight:700;padding:3px 10px;border-radius:4px;letter-spacing:.5px}
+.ing-desc{font-size:12px;color:var(--text2);line-height:1.65;margin-bottom:12px;padding-left:10px}
+.ing-tags{display:flex;gap:6px;flex-wrap:wrap;padding-left:10px}
+.ing-tag{font-family:var(--mono);font-size:10px;color:var(--text3);background:var(--bg3);border:1px solid var(--border);padding:2px 7px;border-radius:3px;letter-spacing:.3px}
+@media(max-width:900px){.ing-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.ing-grid{grid-template-columns:1fr}}
+
+/* ── STACKS SECTION ── */
+.stacks-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:36px}
+.stack-card{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden;transition:border-color .18s,transform .18s}
+.stack-card:hover{border-color:var(--border2);transform:translateY(-2px)}
+.stack-head{padding:20px 20px 14px;border-bottom:1px solid var(--border)}
+.stack-icon{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.stack-name{font-size:15px;font-weight:700;color:var(--text);margin-bottom:4px}
+.stack-sub{font-size:12px;color:var(--text2)}
+.stack-items{padding:16px 20px;display:flex;flex-direction:column;gap:9px}
+.si{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.si-name{font-size:12px;font-weight:500;color:var(--text2)}
+.si-grade{font-family:var(--mono);font-size:10px;font-weight:700;padding:2px 7px;border-radius:3px;letter-spacing:.5px}
+.stack-cta{margin:4px 20px 20px;font-family:var(--mono);font-size:11px;font-weight:600;color:var(--bg);background:var(--green);padding:9px 16px;border-radius:6px;display:block;text-align:center;transition:background .18s}
+.stack-cta:hover{background:var(--green2)}
+@media(max-width:860px){.stacks-grid{grid-template-columns:1fr}}
+
+/* ── METHODOLOGY ── */
+.meth-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:36px}
+.meth-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:22px;position:relative;overflow:hidden}
+.meth-card::after{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--green)}
+.meth-num{font-family:var(--mono);font-size:10px;font-weight:600;color:var(--green);margin-bottom:10px;text-transform:uppercase;letter-spacing:1px}
+.meth-title{font-size:13px;font-weight:700;color:var(--text);margin-bottom:7px}
+.meth-desc{font-size:12px;color:var(--text2);line-height:1.65}
+@media(max-width:768px){.meth-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.meth-grid{grid-template-columns:1fr}}
+
+/* ── ARTICLES ── */
+.art-tabs{display:flex;gap:4px;background:var(--card);border:1px solid var(--border);padding:4px;border-radius:8px;flex-wrap:wrap}
+.atab{font-family:var(--mono);font-size:11px;font-weight:500;padding:7px 14px;border-radius:6px;color:var(--text2);cursor:pointer;transition:all .18s;border:none;background:none;white-space:nowrap}
+.atab.active{background:var(--green);color:var(--bg);font-weight:700}
+.art-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:28px 0}
+.art-card{background:var(--card);border:1px solid var(--border);border-radius:10px;overflow:hidden;transition:all .2s;cursor:pointer;display:flex;flex-direction:column}
+.art-card:hover{border-color:var(--border2);transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,0,0,.4)}
+.art-img{width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--card2)}
+.art-body{padding:16px;flex:1;display:flex;flex-direction:column}
+.art-cat{font-family:var(--mono);font-size:10px;font-weight:500;color:var(--green);text-transform:uppercase;letter-spacing:1px;margin-bottom:7px}
+.art-title{font-size:13px;font-weight:600;color:var(--text);line-height:1.42;flex:1;margin-bottom:10px}
+.art-foot{display:flex;justify-content:space-between;align-items:center;font-size:11px;color:var(--text3)}
+.art-badge{font-family:var(--mono);font-size:10px;padding:2px 7px;border-radius:3px;font-weight:600}
+.art-more-btn{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:11px;font-weight:600;color:var(--green);background:transparent;border:1px solid var(--border2);padding:10px 20px;border-radius:7px;cursor:pointer;transition:all .18s;margin:0 auto}
+.art-more-btn:hover{background:rgba(132,204,22,.07);border-color:var(--green)}
+@media(max-width:768px){.art-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.art-grid{grid-template-columns:1fr}}
+
+/* ── AUTHOR ── */
+.author-card{background:var(--card2);border:1px solid var(--border);border-radius:14px;padding:32px;display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:start;max-width:760px;margin-top:36px}
+.av{width:70px;height:70px;border-radius:12px;background:linear-gradient(135deg,var(--green),var(--green2));display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:20px;font-weight:700;color:var(--bg);flex-shrink:0}
+.av-cred{font-family:var(--mono);font-size:10px;color:var(--green);text-transform:uppercase;letter-spacing:1.2px;margin-bottom:5px}
+.av-name{font-size:18px;font-weight:700;color:var(--text);margin-bottom:3px}
+.av-title{font-size:12px;color:var(--text2);margin-bottom:14px}
+.av-bio{font-size:13px;color:var(--text2);line-height:1.75;margin-bottom:7px}
+@media(max-width:580px){.author-card{grid-template-columns:1fr}}
+
+/* ── NEWSLETTER ── */
+.nl-section{background:var(--card);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:64px 24px}
+.nl-inner{max-width:540px;margin:0 auto;text-align:center}
+.nl-ey{font-family:var(--mono);font-size:11px;font-weight:500;color:var(--green);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:14px}
+.nl-h{font-size:clamp(20px,3vw,30px);font-weight:700;letter-spacing:-.4px;margin-bottom:12px;line-height:1.2}
+.nl-p{font-size:14px;color:var(--text2);line-height:1.75;margin-bottom:28px}
+.nl-form{display:flex;gap:9px;flex-wrap:wrap;justify-content:center}
+.nl-input{flex:1;min-width:220px;font-family:var(--font);font-size:13px;color:var(--text);background:var(--bg);border:1px solid var(--border2);padding:11px 14px;border-radius:var(--r);outline:none;transition:border-color .2s}
+.nl-input:focus{border-color:var(--green)}
+.nl-input::placeholder{color:var(--text3)}
+.nl-btn{font-family:var(--mono);font-size:12px;font-weight:600;color:var(--bg);background:var(--green);border:none;padding:11px 22px;border-radius:var(--r);cursor:pointer;transition:background .18s;white-space:nowrap}
+.nl-btn:hover{background:var(--green2)}
+.nl-note{font-family:var(--mono);font-size:10px;color:var(--text3);margin-top:10px;transition:color .3s}
+
+/* ── FOOTER ── */
+footer{background:var(--bg2);border-top:1px solid var(--border);padding:56px 24px 28px}
+.ft-inner{max-width:1240px;margin:0 auto}
+.ft-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:44px}
+.ft-brand-name{font-family:var(--mono);font-size:15px;font-weight:600;color:var(--green);margin-bottom:12px}
+.ft-brand-desc{font-size:12px;color:var(--text3);line-height:1.7;max-width:260px;margin-bottom:18px}
+.ft-grade-legend{display:flex;flex-direction:column;gap:6px}
+.ft-gl-row{display:flex;align-items:center;gap:9px;font-size:11px;color:var(--text3)}
+.ft-col-h{font-family:var(--mono);font-size:10px;font-weight:600;color:var(--text);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:12px}
+.ft-links{list-style:none;display:flex;flex-direction:column;gap:7px}
+.ft-links a{font-size:12px;color:var(--text3);transition:color .18s}
+.ft-links a:hover{color:var(--green)}
+.ft-bottom{border-top:1px solid var(--border);padding-top:20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.ft-copy{font-family:var(--mono);font-size:11px;color:var(--text3)}
+.ft-legal{display:flex;gap:18px}
+.ft-legal a{font-family:var(--mono);font-size:11px;color:var(--text3);transition:color .18s}
+.ft-legal a:hover{color:var(--green)}
+@media(max-width:900px){.ft-top{grid-template-columns:1fr 1fr}}
+@media(max-width:540px){.ft-top{grid-template-columns:1fr}.ft-bottom{flex-direction:column;text-align:center}}
+
+.reveal{opacity:0;transform:translateY(12px);transition:opacity .45s,transform .45s}
+.reveal.visible{opacity:1;transform:none}
+/* page */
+.ab{max-width:840px;margin:0 auto;padding:56px 24px 88px}
+.ab-kicker{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2.5px;color:#84cc16;margin-bottom:14px}
+.ab-title{font-family:system-ui,sans-serif;font-size:clamp(28px,5vw,42px);font-weight:800;line-height:1.15;color:#eef8e0;margin:0 0 16px}
+.ab-lead{font-size:17px;line-height:1.7;color:#7a9860;margin-bottom:40px}
+.ab-author{display:flex;gap:16px;align-items:center;background:#0c1009;border:1px solid #1a2814;border-radius:10px;padding:20px 22px;margin-bottom:32px}
+.ab-avatar{width:56px;height:56px;border-radius:50%;background:#84cc16;color:#060a07;font-size:18px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.ab-name{font-size:17px;font-weight:700;color:#eef8e0}
+.ab-role{font-size:13px;color:#84cc16;font-weight:600;margin-top:2px}
+.ab-h2{font-family:system-ui,sans-serif;font-size:20px;font-weight:700;color:#eef8e0;margin:40px 0 14px}
+.ab-p{font-size:15px;line-height:1.85;color:#7a9860;margin-bottom:14px}
+.ab-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:14px}
+.ab-card{background:#0c1009;border:1px solid #1a2814;border-radius:10px;padding:18px}
+.ab-card-av{width:38px;height:38px;border-radius:50%;background:#84cc16;color:#060a07;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;margin-bottom:10px}
+.ab-card-name{font-size:14px;font-weight:700;color:#eef8e0}
+.ab-card-role{font-size:11px;font-weight:600;color:#84cc16;margin:2px 0 7px}
+.ab-card-bio{font-size:12px;line-height:1.65;color:#7a9860}
+.ab-cta{margin-top:44px;background:#0c1009;border:1px solid #1a2814;border-radius:12px;padding:30px 26px;text-align:center}
+.ab-cta h3{font-family:system-ui,sans-serif;font-size:19px;font-weight:700;color:#eef8e0;margin:0 0 8px}
+.ab-cta p{font-size:14px;color:#7a9860;margin:0 0 18px}
+.ab-cta a{display:inline-block;background:#84cc16;color:#060a07;padding:11px 28px;border-radius:7px;font-size:14px;font-weight:700;text-decoration:none}
 </style>
 </head>
 <body>
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="./" class="nav-logo">
+      <div class="nl-icon">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>
+      </div>
+      <span class="nl-text">SupplementVerge</span>
+    </a>
+    <nav class="nav-links" id="nav-links">
+      <a href="./" class="nav-link active">Reviews</a>
+      <a href="./#methodology" class="nav-link">Methodology</a>
+      <a href="./#ingredients" class="nav-link">Ingredients</a>
+      <a href="./#stacks" class="nav-link">Stacks</a>
+      <a href="./#newsletter" class="nav-link">Newsletter</a>
+    </nav>
+    <a href="./#newsletter" class="nav-cta">Evidence Brief</a>
+    <button class="nav-burger" onclick="document.getElementById('nav-links').classList.toggle('open')" aria-label="Menu">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</nav>
 
-<!-- nav -->
-<div class="stk-bar">
-  <a href="./" class="stk-brand">Supplement<span> Verge</span></a>
-  <nav class="stk-bar-nav"><a href="./">Home</a><a href="about.html">About</a></nav>
-</div>
-
-<!-- author-hero -->
-<div class="abt-hero">
-  <div class="abt-avi">DJH</div>
-  <div>
-    <div class="abt-hero-name">Dr. James Holloway</div>
-    <div class="abt-hero-title">Sports Scientist & Registered Nutritionist</div>
-    <div class="abt-hero-cat">Supplement Science</div>
+<!-- EVIDENCE TICKER -->
+<div class="ev-bar">
+  <div class="ev-label"><div class="ev-dot"></div>Evidence</div>
+  <div class="ev-viewport">
+    <div class="ev-track">
+      <span class="ev-item">Creatine Monohydrate <span class="ev-g ga">A</span></span>
+      <span class="ev-item">Vitamin D3 <span class="ev-g ga">A</span></span>
+      <span class="ev-item">Omega-3 EPA/DHA <span class="ev-g ga">A</span></span>
+      <span class="ev-item">Magnesium Glycinate <span class="ev-g gb">B+</span></span>
+      <span class="ev-item">Ashwagandha KSM-66 <span class="ev-g gb">B</span></span>
+      <span class="ev-item">Beta-Alanine <span class="ev-g gb">B</span></span>
+      <span class="ev-item">Citrulline Malate <span class="ev-g gb">B+</span></span>
+      <span class="ev-item">Zinc Bisglycinate <span class="ev-g gb">B</span></span>
+      <span class="ev-item">Rhodiola Rosea <span class="ev-g gc">C+</span></span>
+      <span class="ev-item">Collagen Peptides <span class="ev-g gc">C</span></span>
+      <span class="ev-item">Creatine Monohydrate <span class="ev-g ga">A</span></span>
+      <span class="ev-item">Vitamin D3 <span class="ev-g ga">A</span></span>
+      <span class="ev-item">Omega-3 EPA/DHA <span class="ev-g ga">A</span></span>
+      <span class="ev-item">Magnesium Glycinate <span class="ev-g gb">B+</span></span>
+      <span class="ev-item">Ashwagandha KSM-66 <span class="ev-g gb">B</span></span>
+      <span class="ev-item">Beta-Alanine <span class="ev-g gb">B</span></span>
+      <span class="ev-item">Citrulline Malate <span class="ev-g gb">B+</span></span>
+      <span class="ev-item">Zinc Bisglycinate <span class="ev-g gb">B</span></span>
+      <span class="ev-item">Rhodiola Rosea <span class="ev-g gc">C+</span></span>
+      <span class="ev-item">Collagen Peptides <span class="ev-g gc">C</span></span>
+    </div>
   </div>
 </div>
-
-<!-- pexels-banner -->
-<!-- hero-banner -->
-<div id="pxl-wrap" style="width:100%;height:220px;overflow:hidden;position:relative;background:var(--bg2);">
-  <img id="pxl-img" style="width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .8s;display:block;" alt="">
-  <a id="pxl-cred" href="https://www.pexels.com" target="_blank" rel="noopener" style="position:absolute;bottom:6px;right:10px;font-size:10px;color:rgba(255,255,255,.5);opacity:0;transition:opacity .6s;text-decoration:none;">Photo: Pexels</a>
-</div>
-
-<!-- main-content -->
-<div class="abt-content">
-
-  <!-- section: background story -->
-  <div class="abt-section">
-    <h2>Background</h2>
-    <p class="abt-p">I studied sports science at university and spent my graduate years in a lab reviewing clinical literature on ergogenic aids. The contrast between what the research showed and what was being marketed to athletes in the supplement aisle was what set me on this path.</p>
-    <p class="abt-p">After graduate work I started consulting with competitive athletes on evidence-based nutrition. Most of them had been spending significant money on supplements that lacked credible human evidence. A few were taking things that studies actively suggested were ineffective.</p>
-    <p class="abt-p">Eleven years of working with athletes and reviewing clinical trials gives you a clear hierarchy - the evidence for creatine and caffeine is deep and consistent; the evidence for dozens of popular products is thin or nonexistent; a meaningful number of products have been studied and found to underperform their marketing claims significantly.</p>
-    <p class="abt-p">Supplement Verge was born from frustration with review content that read like marketing copy or relied on mechanism-based reasoning rather than human outcome data. The fact that something works in a cell culture study does not mean it works at a dose you can consume without side effects in real human physiology.</p>
-    <p class="abt-p">Every ingredient on this site gets graded by the quality and consistency of human evidence available - how many trials, how many subjects, what outcomes were measured, what the effect size actually was. That is the only honest way to evaluate a supplement.</p>
+<main class="ab">
+  <div class="ab-kicker">About Supplement Verge</div>
+  <h1 class="ab-title">What the Research Actually Says</h1>
+  <p class="ab-lead">Supplement reviews and nutrition science graded by human clinical evidence. No marketing claims, no sponsored opinions.</p>
+  <div class="ab-author">
+    <div class="ab-avatar">DJ</div>
+    <div>
+      <div class="ab-name">Dr. James Holloway</div>
+      <div class="ab-role">Sports Scientist & Registered Nutritionist</div>
+    </div>
   </div>
-
-  <!-- section: what this site is about -->
-  <div class="abt-highlight">
-    <div class="abt-highlight-label">What This Site Covers</div>
-    <p>Supplement reviews and nutrition science graded by human clinical evidence. No marketing claims, no sponsored opinions.</p>
+  <div class="ab-h2">Why this site exists</div>
+  <p class="ab-p">I studied sports science at university and spent my graduate years in a lab reviewing clinical literature on ergogenic aids. The contrast between what the research showed and what was being marketed to athletes in the supplement aisle was what set me on this path.</p>
+    <p class="ab-p">After graduate work I started consulting with competitive athletes on evidence-based nutrition. Most of them had been spending significant money on supplements that lacked credible human evidence. A few were taking things that studies actively suggested were ineffective.</p>
+    <p class="ab-p">Eleven years of working with athletes and reviewing clinical trials gives you a clear hierarchy - the evidence for creatine and caffeine is deep and consistent; the evidence for dozens of popular products is thin or nonexistent; a meaningful number of products have been studied and found to underperform their marketing claims significantly.</p>
+    <p class="ab-p">Supplement Verge was born from frustration with review content that read like marketing copy or relied on mechanism-based reasoning rather than human outcome data. The fact that something works in a cell culture study does not mean it works at a dose you can consume without side effects in real human physiology.</p>
+    <p class="ab-p">Every ingredient on this site gets graded by the quality and consistency of human evidence available - how many trials, how many subjects, what outcomes were measured, what the effect size actually was. That is the only honest way to evaluate a supplement.</p>
+  <div class="ab-h2">Who contributes</div>
+  <p class="ab-p">Alongside Dr. James Holloway, a small group of practitioners review and pressure-test what gets published here.</p>
+  <div class="ab-grid">
+      <div class="ab-card">
+        <div class="ab-card-av">PN</div>
+        <div class="ab-card-name">Priya Nair</div>
+        <div class="ab-card-role">Research Contributor</div>
+        <div class="ab-card-bio">Data scientist turned independent writer. Builds the models, then explains what they actually mean in plain language.</div>
+      </div>
+      <div class="ab-card">
+        <div class="ab-card-av">MW</div>
+        <div class="ab-card-name">Marcus Webb</div>
+        <div class="ab-card-role">Senior Contributor</div>
+        <div class="ab-card-bio">15 years in institutional sales at two major banks. Writes about macro dynamics and how they translate to retail positioning.</div>
+      </div>
+      <div class="ab-card">
+        <div class="ab-card-av">RK</div>
+        <div class="ab-card-name">Rachel Kim</div>
+        <div class="ab-card-role">Contributing Analyst</div>
+        <div class="ab-card-bio">Former hedge fund researcher. Covers quantitative methods and market microstructure. Has contributed to three academic finance papers.</div>
+      </div>
   </div>
-
-  <!-- section: site mission -->
-  <div class="abt-section">
-    <h2>About Supplement Verge</h2>
-    <p class="abt-p">Supplement reviews graded by clinical evidence quality.</p>
-    <p class="abt-p">Content in the Supplement Science space is published here on an ongoing basis. No sponsored content, no paid placements - just the analysis and frameworks I find genuinely useful.</p>
-  </div>
-
-  <!-- section: newsletter -->
-  <div class="abt-nl">
+  <div class="ab-cta">
     <h3>The Evidence Brief</h3>
     <p>Monthly supplement science roundup - what the trials actually showed.</p>
-    <form id="abt-nl" onsubmit="nlSub(event)">
-      <div class="stk-letter-form">
-        <input type="email" class="stk-letter-input" placeholder="your@email.com" required>
-        <button type="submit" class="stk-letter-btn">Subscribe</button>
-      </div>
-    </form>
+    <a href="./">Read the latest</a>
   </div>
-
-</div>
-
-<!-- section: contributors -->
-<div style="max-width:860px;margin:0 auto;padding:0 48px 32px">
-  <div class="abt-section-hd" style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--mut);margin-bottom:14px">Contributors</div>
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
-    <div style="background:var(--sur);border:1px solid var(--brd);border-radius:10px;padding:16px;display:flex;gap:12px;align-items:flex-start">
-      <div style="width:40px;height:40px;border-radius:50%;background:var(--pri);color:#000;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0">PN</div>
+</main>
+<footer>
+  <div class="ft-inner">
+    <div class="ft-top">
       <div>
-        <div style="font-size:14px;font-weight:700;color:var(--txt)">Priya Nair</div>
-        <div style="font-size:11px;color:var(--pri);margin-bottom:5px;font-weight:600">Research Contributor</div>
-        <div style="font-size:12px;color:var(--mut);line-height:1.6">Data scientist turned independent writer. Builds the models, then explains what they actually mean in plain language.</div>
+        <div class="ft-brand-name">SupplementVerge</div>
+        <p class="ft-brand-desc">Supplement reviews graded by human clinical evidence. No marketing claims, no sponsored opinions.</p>
+        <div class="ft-grade-legend">
+          <div style="font-family:var(--mono);font-size:9px;color:var(--text3);text-transform:uppercase;letter-spacing:1.2px;margin-bottom:8px">Evidence Grade Key</div>
+          <div class="ft-gl-row"><span class="ing-badge ga" style="min-width:22px;text-align:center">A</span> Multiple high-quality RCTs confirm</div>
+          <div class="ft-gl-row"><span class="ing-badge gb">B</span> Promising with some limitations</div>
+          <div class="ft-gl-row"><span class="ing-badge gc">C</span> Weak or inconsistent evidence</div>
+        </div>
       </div>
-    </div>
-    <div style="background:var(--sur);border:1px solid var(--brd);border-radius:10px;padding:16px;display:flex;gap:12px;align-items:flex-start">
-      <div style="width:40px;height:40px;border-radius:50%;background:var(--pri);color:#000;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0">MW</div>
       <div>
-        <div style="font-size:14px;font-weight:700;color:var(--txt)">Marcus Webb</div>
-        <div style="font-size:11px;color:var(--pri);margin-bottom:5px;font-weight:600">Senior Contributor</div>
-        <div style="font-size:12px;color:var(--mut);line-height:1.6">15 years in institutional sales at two major banks. Writes about macro dynamics and how they translate to retail positioning.</div>
+        <div class="ft-col-h">Reviews</div>
+        <ul class="ft-links">
+          <li><a href="./#ingredients">Ingredient Database</a></li>
+          <li><a href="./#articles">Latest Reviews</a></li>
+          <li><a href="./#methodology">Our Methodology</a></li>
+          <li><a href="./#newsletter">Evidence Brief</a></li>
+        </ul>
       </div>
-    </div>
-    <div style="background:var(--sur);border:1px solid var(--brd);border-radius:10px;padding:16px;display:flex;gap:12px;align-items:flex-start">
-      <div style="width:40px;height:40px;border-radius:50%;background:var(--pri);color:#000;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0">RK</div>
       <div>
-        <div style="font-size:14px;font-weight:700;color:var(--txt)">Rachel Kim</div>
-        <div style="font-size:11px;color:var(--pri);margin-bottom:5px;font-weight:600">Contributing Analyst</div>
-        <div style="font-size:12px;color:var(--mut);line-height:1.6">Former hedge fund researcher. Covers quantitative methods and market microstructure. Has contributed to three academic finance papers.</div>
+        <div class="ft-col-h">Categories</div>
+        <ul class="ft-links">
+          <li><a href="./#articles">Protein &amp; Amino Acids</a></li>
+          <li><a href="./#articles">Pre-Workout</a></li>
+          <li><a href="./#articles">Fat Loss</a></li>
+          <li><a href="./#articles">Recovery</a></li>
+        </ul>
       </div>
-    </div>
-    <div style="background:var(--sur);border:1px solid var(--brd);border-radius:10px;padding:16px;display:flex;gap:12px;align-items:flex-start">
-      <div style="width:40px;height:40px;border-radius:50%;background:var(--pri);color:#000;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0">LF</div>
       <div>
-        <div style="font-size:14px;font-weight:700;color:var(--txt)">Lena Fischer</div>
-        <div style="font-size:11px;color:var(--pri);margin-bottom:5px;font-weight:600">International Contributor</div>
-        <div style="font-size:12px;color:var(--mut);line-height:1.6">Based in Frankfurt. Covers European regulatory developments, cross-border market dynamics, and emerging market capital flows.</div>
+        <div class="ft-col-h">Science</div>
+        <ul class="ft-links">
+          <li><a href="./#stacks">Evidence Stacks</a></li>
+          <li><a href="./#methodology">Grade System</a></li>
+          <li><a href="./#ingredients">Dosing Protocols</a></li>
+        </ul>
       </div>
     </div>
-  </div>
-</div>
-
-<!-- section: comments -->
-<div style="max-width:860px;margin:0 auto;padding:0 48px 40px">
-  <div class="abt-section-hd" style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--mut);margin-bottom:14px">Reader Comments</div>
-  <div style="background:var(--sur);border:1px solid var(--brd);border-radius:10px;padding:4px 20px">
-    <div style="padding:14px 0;border-bottom:1px solid var(--brd)">
-      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-        <div style="width:28px;height:28px;border-radius:50%;background:var(--pri)22;border:1px solid var(--pri)44;color:var(--pri);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center">C</div>
-        <span style="font-size:13px;font-weight:600;color:var(--txt)">Chris V.</span>
-        <span style="font-size:10px;color:var(--mut);margin-left:auto">Verified reader</span>
+    <div class="ft-bottom">
+      <span class="ft-copy">&#169; 2026 SupplementVerge. For informational purposes only. Not medical advice.</span>
+      <div class="ft-legal">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Disclosure</a>
       </div>
-      <div style="font-size:13px;color:var(--txt);line-height:1.65;padding-left:36px">Refreshing to read something that acknowledges uncertainty instead of pretending everything is obvious in hindsight.</div>
-    </div>
-    <div style="padding:14px 0;border-bottom:1px solid var(--brd)">
-      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-        <div style="width:28px;height:28px;border-radius:50%;background:var(--pri)22;border:1px solid var(--pri)44;color:var(--pri);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center">J</div>
-        <span style="font-size:13px;font-weight:600;color:var(--txt)">Julia M.</span>
-        <span style="font-size:10px;color:var(--mut);margin-left:auto">Verified reader</span>
-      </div>
-      <div style="font-size:13px;color:var(--txt);line-height:1.65;padding-left:36px">Bookmarked every major article this site has published. My actual reference library for this topic, not just casual reading.</div>
-    </div>
-    <div style="padding:14px 0;border-bottom:1px solid var(--brd)">
-      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-        <div style="width:28px;height:28px;border-radius:50%;background:var(--pri)22;border:1px solid var(--pri)44;color:var(--pri);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center">S</div>
-        <span style="font-size:13px;font-weight:600;color:var(--txt)">Serena T.</span>
-        <span style="font-size:10px;color:var(--mut);margin-left:auto">Verified reader</span>
-      </div>
-      <div style="font-size:13px;color:var(--txt);line-height:1.65;padding-left:36px">I have shared this with three colleagues already. The kind of analysis that used to be locked behind expensive research subscriptions.</div>
-    </div>
-    <div style="padding:14px 0;border-bottom:1px solid var(--brd)">
-      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-        <div style="width:28px;height:28px;border-radius:50%;background:var(--pri)22;border:1px solid var(--pri)44;color:var(--pri);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center">D</div>
-        <span style="font-size:13px;font-weight:600;color:var(--txt)">Denise L.</span>
-        <span style="font-size:10px;color:var(--mut);margin-left:auto">Verified reader</span>
-      </div>
-      <div style="font-size:13px;color:var(--txt);line-height:1.65;padding-left:36px">I have been following this site for over a year. The consistency and quality have only gone up. Very few places I can say that about.</div>
-    </div>
-    <div style="padding:14px 0;border-bottom:none">
-      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-        <div style="width:28px;height:28px;border-radius:50%;background:var(--pri)22;border:1px solid var(--pri)44;color:var(--pri);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center">M</div>
-        <span style="font-size:13px;font-weight:600;color:var(--txt)">Mike H.</span>
-        <span style="font-size:10px;color:var(--mut);margin-left:auto">Verified reader</span>
-      </div>
-      <div style="font-size:13px;color:var(--txt);line-height:1.65;padding-left:36px">The level of detail here is what keeps me coming back. You actually back up the claims instead of just asserting them.</div>
     </div>
   </div>
-</div>
-
-<!-- footer -->
-<div class="stk-base">
-  <span class="stk-base-copy">© Supplement Verge</span>
-  <div class="stk-base-links"><a href="./">Home</a><a href="about.html">About</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a><a href="sms.html">SMS Policy</a><a href="meta-policy.html">Meta Policy</a></div>
-</div>
+</footer>
 
 <script>
-function nlSub(e){e.preventDefault();e.target.innerHTML='<div class="stk-letter-ok">✓ Subscribed.</div>';}
-/* banner loader: pexels → unsplash → picsum */
-(function(){
-  var el=document.getElementById('pxl-img');
-  var cr=document.getElementById('pxl-cred');
-  if(!el)return;
-  var SOURCES=['pexels', 'unsplash'];
-  var Q=encodeURIComponent('nutrition supplements vitamins health science');
-  var FALLBACK='https://picsum.photos/seed/134/1400/400';
-  function showImg(src,cred){
-    el.onload=function(){el.style.opacity='1';if(cred&&cr){cr.textContent=cred;cr.style.opacity='1';}};
-    el.src=src;
-  }
-  function tryUnsplash(){
-    var uk=localStorage.getItem('unsplashKey');
-    if(!uk){showImg(FALLBACK,'');return;}
-    fetch('https://api.unsplash.com/photos/random?query='+Q+'&count=1&orientation=landscape&client_id='+uk)
-      .then(function(r){return r.json();}).then(function(d){
-        var p=Array.isArray(d)?d[0]:d;
-        if(p&&p.urls&&p.urls.regular){showImg(p.urls.regular,'Photo: '+((p.user&&p.user.name)||'Unsplash')+' / Unsplash');}
-        else{showImg(FALLBACK,'');}
-      }).catch(function(){showImg(FALLBACK,'');});
-  }
-  function tryPexels(){
-    var k=localStorage.getItem('pexelsKey');
-    if(!k){if(SOURCES.indexOf('unsplash')>=0)tryUnsplash();else showImg(FALLBACK,'');return;}
-    fetch('https://api.pexels.com/v1/search?query='+Q+'&per_page=5&orientation=landscape',{headers:{Authorization:k}})
-      .then(function(r){return r.json();}).then(function(d){
-        if(d.photos&&d.photos[0]){showImg(d.photos[0].src.large,'Photo: Pexels');}
-        else if(SOURCES.indexOf('unsplash')>=0){tryUnsplash();}
-        else{showImg(FALLBACK,'');}
-      }).catch(function(){if(SOURCES.indexOf('unsplash')>=0)tryUnsplash();else showImg(FALLBACK,'');});
-  }
-  if(SOURCES.indexOf('pexels')>=0){tryPexels();}
-  else if(SOURCES.indexOf('unsplash')>=0){tryUnsplash();}
-  else{showImg(FALLBACK,'');}
-})();
+let allArts=[], shown=0, activeTab='all';
+const PAGE=9;
+
+function fmtDate(d){if(!d)return'';try{return new Date(d).toLocaleDateString('en-US',{month:'short',day:'numeric'});}catch{return d;}}
+
+function getGradeFromCat(cat){
+  const c=(cat||'').toLowerCase();
+  if(c.includes('creatine')||c.includes('vitamin')||c.includes('omega'))return'A';
+  if(c.includes('magnesium')||c.includes('ashwagandha')||c.includes('beta'))return'B';
+  return'B';
+}
+
+function filtered(){
+  if(activeTab==='all')return allArts;
+  return allArts.filter(a=>(a.category||a.title||'').toLowerCase().includes(activeTab));
+}
+
+function render(){
+  const arts=filtered();
+  const grid=document.getElementById('art-grid');
+  const btn=document.getElementById('more-btn');
+  const batch=arts.slice(0,shown);
+  grid.innerHTML=batch.map(a=>{
+    const g=a.grade||getGradeFromCat(a.category);
+    const gc=g==='A'?'ga':g==='B'||g==='B+'?'gb':'gc';
+    return`<a href="./${a.slug}/" class="art-card">
+      <img class="art-img" src="${a.image||''}" alt="${a.title}" loading="lazy" onerror="this.style.display='none'">
+      <div class="art-body">
+        <div class="art-cat">${a.category||'Research'}</div>
+        <div class="art-title">${a.title}</div>
+        <div class="art-foot">
+          <span>${fmtDate(a.date||a.published_date)}</span>
+          <span class="art-badge ${gc}">${g}</span>
+        </div>
+      </div>
+    </a>`;
+  }).join('');
+  btn.style.display=shown<arts.length?'flex':'none';
+}
+
+function loadMore(){shown=Math.min(shown+PAGE,filtered().length);render();}
+
+function switchTab(el,tab){
+  document.querySelectorAll('.atab').forEach(t=>t.classList.remove('active'));
+  el.classList.add('active');
+  activeTab=tab;
+  shown=PAGE;
+  render();
+}
+
+async function loadArticles(){
+  try{
+    const r=await fetch('./articles.json');
+    if(!r.ok)return;
+    const data=await r.json();
+    allArts=Array.isArray(data)?data:[];
+    shown=Math.min(PAGE,allArts.length);
+    render();
+  }catch{}
+}
+
+function nlSub(){
+  const inp=document.getElementById('nl-email');
+  const msg=document.getElementById('nl-msg');
+  const email=(inp.value||'').trim();
+  if(!email||!email.includes('@')){msg.style.color='#ef4444';msg.textContent='Please enter a valid email.';return;}
+  msg.style.color='var(--green)';msg.textContent='Subscribed! Check your inbox.';
+  inp.value='';inp.disabled=true;
+  document.querySelector('.nl-btn').disabled=true;
+  document.querySelector('.nl-btn').style.opacity='.5';
+}
+
+function initReveal(){
+  document.querySelectorAll('.reveal').forEach(el=>{
+    new IntersectionObserver((e,o)=>{e.forEach(n=>{if(n.isIntersecting){n.target.classList.add('visible');o.unobserve(n.target);}});},{threshold:.05}).observe(el);
+  });
+}
+
+loadArticles();
+initReveal();
 </script>
-</body></html>
+</body>
+</html>
