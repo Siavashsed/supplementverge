@@ -200,6 +200,32 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:56px 24p
 
 .reveal{opacity:0;transform:translateY(12px);transition:opacity .45s,transform .45s}
 .reveal.visible{opacity:1;transform:none}
+
+/* CONTRAST-AUDIT v1 */
+/* Article-page-only contrast guard. body[data-page-depth="1"] is stamped on
+   every article by layout_shell.wrap_page. Homepage (depth=0) is untouched. */
+body[data-page-depth="1"] h1,
+body[data-page-depth="1"] h2,
+body[data-page-depth="1"] h3,
+body[data-page-depth="1"] .art-title,
+body[data-page-depth="1"] .article-title,
+body[data-page-depth="1"] .mag-hero h1,
+body[data-page-depth="1"] .imm-hero h1,
+body[data-page-depth="1"] article h1,
+body[data-page-depth="1"] article h2,
+body[data-page-depth="1"] article h3{color:#ffffff !important}
+body[data-page-depth="1"] article p,
+body[data-page-depth="1"] article li,
+body[data-page-depth="1"] .art-body p,
+body[data-page-depth="1"] .mag-body p,
+body[data-page-depth="1"] .imm-body p,
+body[data-page-depth="1"] article .intro,
+body[data-page-depth="1"] article .concl,
+body[data-page-depth="1"] article strong{color:#e6e6e6 !important}
+body[data-page-depth="1"] article a,
+body[data-page-depth="1"] article p a,
+body[data-page-depth="1"] article .intro a{color:#84cc16 !important;text-decoration:underline;text-underline-offset:3px}
+/* /CONTRAST-AUDIT */
 /* page */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -221,6 +247,8 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:56px 24p
   --mono:'IBM Plex Mono',monospace;
   --r:8px;
 }
+/* page */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 .art-img{width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--card2)}
 /* page */
 .hdr{background:#141414;border-bottom:1px solid #252525;padding:18px 24px;display:flex;justify-content:space-between;align-items:center;max-width:none}
@@ -289,7 +317,7 @@ p{margin-bottom:18px;color:#aaa;line-height:1.75}
 </div>
 <article itemscope itemtype="https://schema.org/Article"><div class="wrap">
   <section>
-    <div style="font-size:13px;color:#555;margin-bottom:20px"><a href="../" style="color:#555">← Home</a> &nbsp;·&nbsp; <time datetime="2026-05-15"><time datetime="2026-05-15"><time datetime="2026-05-15"><time datetime="2026-05-15"><time datetime="2026-05-15">May 15, 2026</time></time></time></time></time></div>
+    <div style="font-size:13px;color:#555;margin-bottom:20px"><a href="../" style="color:#555">← Home</a> &nbsp;·&nbsp; <time datetime="2026-05-15"><time datetime="2026-05-15"><time datetime="2026-05-15"><time datetime="2026-05-15"><time datetime="2026-05-15"><time datetime="2026-05-15">May 15, 2026</time></time></time></time></time></time></div>
     <h1>Does Pre-Workout Actually Improve Performance? A Sports Scientist Cuts Through the Hype</h1>
     <div style="font-size:13px;color:#555;margin-bottom:20px">By <strong style="color:#aaa">Dr. James Holloway</strong></div>
     <img src="https://images.pexels.com/photos/4720497/pexels-photo-4720497.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Person scooping pre-workout powder into a shaker bottle on a gym bench before training" loading="lazy" style="width:100%;height:380px;object-fit:cover;border-radius:8px;margin:24px 0"><p style="font-size:11px;color:#555;margin-top:-12px">Photo: Ketut Subiyanto / Pexels</p>
@@ -426,7 +454,7 @@ p{margin-bottom:18px;color:#aaa;line-height:1.75}
     }).catch(function(){allComments=[];rerender();});
   }
 })();
-</script></article></article></article></article></article>
+</script></article></article></article></article></article></article>
 <footer>
   <div class="ft-inner">
     <div class="ft-top">
