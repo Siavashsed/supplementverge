@@ -10,7 +10,8 @@
     "outbound_links": [
       "examine.com",
       "pubmed.ncbi.nlm.nih.gov"
-    ]
+    ],
+    "category": "Brain & Focus"
   },
   {
     "title": "Does Pre-Workout Actually Improve Performance? A Sports Scientist Cuts Through the Hype",
@@ -23,7 +24,8 @@
     "outbound_links": [
       "bjsm.bmj.com",
       "examine.com"
-    ]
+    ],
+    "category": "Sleep & Recovery"
   },
   {
     "title": "Protein Timing: Does When You Eat Actually Matter As Much As How Much?",
@@ -36,7 +38,8 @@
     "outbound_links": [
       "jissn.biomedcentral.com",
       "pubmed.ncbi.nlm.nih.gov"
-    ]
+    ],
+    "category": "Strength & Power"
   },
   {
     "title": "Vitamin D Deficiency: Why Most People Are Getting the Dose Completely Wrong",
@@ -49,7 +52,8 @@
     "outbound_links": [
       "examine.com",
       "endocrine.org"
-    ]
+    ],
+    "category": "Sleep & Recovery"
   },
   {
     "title": "Ashwagandha for Stress: What the Human Trials Actually Found",
@@ -62,6 +66,7 @@
     "outbound_links": [
       "examine.com",
       "pubmed.ncbi.nlm.nih.gov"
-    ]
+    ],
+    "category": "Sleep & Recovery"
   }
 ]
