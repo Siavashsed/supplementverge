@@ -7,7 +7,7 @@
     "date_iso": "2026-05-20",
     "date_display": "May 20, 2026",
     "text": "Finally someone breaking down the actual study data instead of hype. I've been taking ashwagandha for 3 months and the cortisol reduction is real for me, but I appreciate knowing the effect sizes are modest in most trials.",
-    "likes": 8
+    "likes": 0
   },
   {
     "id": "c2520",
@@ -17,36 +17,6 @@
     "date_iso": "2026-05-23",
     "date_display": "May 23, 2026",
     "text": "Question: did any of the studies you reviewed test different dosages? I'm on 300mg daily but wondering if I should go higher based on what actually works.",
-    "likes": 5
-  },
-  {
-    "id": "c3551",
-    "name": "David R.",
-    "initials": "DR",
-    "color": "#3ecf8e",
-    "date_iso": "2026-05-26",
-    "date_display": "May 26, 2026",
-    "text": "Tried it for 2 weeks, felt nothing. Switched to meditation and that's been way more effective. Individual response must vary a lot based on your baseline stress levels.",
-    "likes": 11
-  },
-  {
-    "id": "c4846",
-    "name": "Priya M.",
-    "initials": "PM",
-    "color": "#f59e0b",
-    "date_iso": "2026-06-01",
-    "date_display": "Jun 1, 2026",
-    "text": "The mechanism section was really helpful. Knowing it works on GABA receptors explains why it pairs well with my yoga routine. Nice to see the science matched my experience.",
-    "likes": 6
-  },
-  {
-    "id": "c5468",
-    "name": "Kevin L.",
-    "initials": "KL",
-    "color": "#14b8a6",
-    "date_iso": "2026-06-03",
-    "date_display": "Jun 3, 2026",
-    "text": "Appreciate the honesty about the placebo effect being high in stress studies. That said, if it works it works - my sleep improved either way so I'm keeping it in my stack.",
-    "likes": 9
+    "likes": 1
   }
 ]
