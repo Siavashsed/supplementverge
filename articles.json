@@ -68,5 +68,61 @@
       "pubmed.ncbi.nlm.nih.gov"
     ],
     "category": "Sleep & Recovery"
+  },
+  {
+    "title": "The FDA's 2023 Crackdown on NAD+ Supplements Was a Wake-Up Call the Industry Needed",
+    "slug": "fda-2023-nad-supplement-crackdown",
+    "meta_description": "Dr. James Holloway breaks down the FDA's 2023 enforcement action on NAD+ precursor supplements and what it means for consumers and the science.",
+    "date": "December 21, 2023",
+    "date_iso": "2023-12-21",
+    "author": "Dr. James Holloway",
+    "image": "https://images.pexels.com/photos/11348085/pexels-photo-11348085.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "fda.gov",
+      "cell.com",
+      "ncbi.nlm.nih.gov"
+    ],
+    "posted_iso": "2026-05-28",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "The FTC's 2020 Crackdown on Supplement Claims Was Long Overdue - Here's What It Actually Changed",
+    "slug": "ftc-2020-supplement-advertising-crackdown",
+    "meta_description": "In 2020, the FTC ramped up enforcement on supplement advertising. Dr. James Holloway breaks down what happened, why it mattered, and what it didn't fix.",
+    "date": "October 15, 2020",
+    "date_iso": "2020-10-15",
+    "author": "Dr. James Holloway",
+    "image": "https://images.pexels.com/photos/3850674/pexels-photo-3850674.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "ftc.gov",
+      "cochranelibrary.com",
+      "fda.gov"
+    ],
+    "posted_iso": "2026-05-28",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "The FTC's 2023 Crackdown on Weight Loss Supplements Finally Had Teeth",
+    "slug": "ftc-2023-weight-loss-supplement-crackdown",
+    "meta_description": "Dr. James Holloway breaks down the FTC's 2023 weight loss supplement enforcement action and what it actually means for consumers and the industry.",
+    "date": "October 24, 2023",
+    "date_iso": "2023-10-24",
+    "author": "Dr. James Holloway",
+    "image": "https://images.pexels.com/photos/7230413/pexels-photo-7230413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "ftc.gov",
+      "ncbi.nlm.nih.gov"
+    ],
+    "posted_iso": "2026-05-28",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
