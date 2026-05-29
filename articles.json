@@ -85,7 +85,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Strength & Power"
   },
   {
     "title": "The FTC's 2020 Crackdown on Supplement Claims Was Long Overdue - Here's What It Actually Changed",
@@ -103,7 +104,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Immune & General Health"
   },
   {
     "title": "The FTC's 2023 Crackdown on Weight Loss Supplements Finally Had Teeth",
@@ -120,7 +122,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Strength & Power"
   },
   {
     "title": "The Week's Top 7 Supplements Worth Your Attention Right Now (May 2026)",
@@ -158,6 +161,7 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Strength & Power"
   }
 ]
