@@ -121,5 +121,43 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "The Week's Top 7 Supplements Worth Your Attention Right Now (May 2026)",
+    "slug": "top-7-supplements-may-2026",
+    "meta_description": "Dr. James Holloway ranks the 7 most notable supplement trends of May 2026 - what the science says, who each is for, and what to skip.",
+    "date": "May 29, 2026",
+    "date_iso": "2026-05-29",
+    "author": "Dr. James Holloway",
+    "image": "https://images.pexels.com/photos/7615406/pexels-photo-7615406.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "ncbi.nlm.nih.gov",
+      "grandviewresearch.com",
+      "frontiersin.org"
+    ],
+    "posted_iso": "2026-05-29",
+    "category": "Top Finds",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "The FDA's 2019 Warning Letter Surge: What It Really Meant for the Supplement Industry",
+    "slug": "fda-2019-supplement-warning-letters",
+    "meta_description": "The FDA issued a record number of supplement warning letters in 2019. Here's what it meant for the industry and what you should have taken from it.",
+    "date": "October 20, 2019",
+    "date_iso": "2019-10-20",
+    "author": "Dr. James Holloway",
+    "image": "https://images.pexels.com/photos/35984487/pexels-photo-35984487.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "statista.com",
+      "fda.gov",
+      "jamanetwork.com"
+    ],
+    "posted_iso": "2026-05-29",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
