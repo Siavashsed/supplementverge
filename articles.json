@@ -163,5 +163,42 @@
       "en"
     ],
     "category": "Strength & Power"
+  },
+  {
+    "title": "Beta-Alanine for Endurance Athletes: Why the Tingling Matters and What 200+ Studies Reveal",
+    "slug": "beta-alanine-endurance-athletes-studies",
+    "meta_description": "Sports scientist Dr. James Holloway breaks down what 200+ studies really show about beta-alanine for endurance athletes. The tingling isn't a side effect.",
+    "date": "May 31, 2026",
+    "date_iso": "2026-05-31",
+    "author": "Dr. James Holloway",
+    "image": "https://images.pexels.com/photos/32163062/pexels-photo-32163062.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "bjsm.bmj.com",
+      "jissn.biomedcentral.com",
+      "ncbi.nlm.nih.gov"
+    ],
+    "posted_iso": "2026-05-31",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "The FTC's 2024 Crackdown on GLP-1 Supplement Claims Was the Moment the Industry Needed",
+    "slug": "ftc-2024-glp1-supplement-crackdown",
+    "meta_description": "The FTC's 2024 action against fake GLP-1 supplements reshaped how the industry makes weight-loss claims. Here's what it actually meant.",
+    "date": "February 23, 2024",
+    "date_iso": "2024-02-23",
+    "author": "Dr. James Holloway",
+    "image": "https://images.pexels.com/photos/7615467/pexels-photo-7615467.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "ftc.gov",
+      "ncbi.nlm.nih.gov",
+      "reuters.com"
+    ],
+    "posted_iso": "2026-05-31",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
