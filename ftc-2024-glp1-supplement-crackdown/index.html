@@ -234,12 +234,17 @@ body[data-page-depth="1"] article .intro a{color:#0a0a0a !important;text-decorat
 
 .tb-hero{position:relative;min-height:clamp(300px,46vh,460px);background-size:cover;background-position:center;display:flex;align-items:flex-end;margin:0 0 0;color:#fff;overflow:hidden}
 .tb-hero-flat{background:linear-gradient(135deg,#84cc16 0%,#0c1009 100%)}
-.tb-hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.35) 55%,rgba(0,0,0,.92) 100%)}
+.tb-hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.34) 0%,rgba(0,0,0,.48) 48%,rgba(0,0,0,.92) 100%)}
 .tb-hero-content{position:relative;z-index:1;max-width:1080px;margin:0 auto;padding:48px 24px 40px;width:100%}
 .tb-tag{display:inline-block;background:#84cc16;color:#0b0b0b;font-family:system-ui,sans-serif;font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;padding:7px 14px;border-radius:4px;margin-bottom:20px}
 .tb-h1{font-family:system-ui,sans-serif;font-size:clamp(30px,6vw,56px);font-weight:800;line-height:1.04;letter-spacing:-.02em;color:#fff;margin:0 0 16px;max-width:20ch;text-wrap:balance;text-shadow:0 2px 24px rgba(0,0,0,.45)}
 .tb-dek{font-family:system-ui,sans-serif;font-weight:500;font-size:clamp(18px,1.8vw,24px);line-height:1.4;color:rgba(255,255,255,.92);max-width:60ch;margin:0;text-wrap:pretty}
 .tb-credit{position:absolute;bottom:14px;right:22px;font-family:system-ui,sans-serif;font-size:10.5px;color:rgba(255,255,255,.75);letter-spacing:.16em;text-transform:uppercase}
+/* Force hero text to stay light over the photo - beats the homepage shell's
+   article-depth contrast-audit that otherwise repaints h1/dek dark. */
+body[data-page-depth="1"] .tb-hero .tb-h1{color:#fff!important}
+body[data-page-depth="1"] .tb-hero .tb-dek{color:rgba(255,255,255,.94)!important}
+body[data-page-depth="1"] .tb-hero .tb-tag{color:#0b0b0b!important}
 .tb{max-width:760px;margin:0 auto;padding:40px 24px 96px;color:#eef8e0}
 .tb-meta{display:flex;gap:24px;flex-wrap:wrap;font-family:system-ui,sans-serif;font-size:12px;color:#7a9860;letter-spacing:.06em;padding:14px 0;border-bottom:2px solid #eef8e0;margin-bottom:32px}
 .tb-meta strong{color:#eef8e0;font-weight:700;text-transform:uppercase}
