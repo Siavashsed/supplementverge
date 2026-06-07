@@ -202,5 +202,42 @@
       "en"
     ],
     "category": "Strength & Power"
+  },
+  {
+    "title": "The Week's Top 7 Supplements Worth Knowing About Right Now (June 2026)",
+    "slug": "top-7-supplements-june-2026",
+    "meta_description": "Dr. James Holloway ranks June 2026's most notable supplement trends. Science-first reviews, clear verdicts, and no marketing spin.",
+    "date": "June 07, 2026",
+    "date_iso": "2026-06-07",
+    "author": "Dr. James Holloway",
+    "image": "https://images.pexels.com/photos/6074924/pexels-photo-6074924.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "ncbi.nlm.nih.gov",
+      "frontiersin.org",
+      "fda.gov"
+    ],
+    "posted_iso": "2026-06-07",
+    "category": "Top Finds",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "The FTC's 2021 Crackdown on COVID-19 Supplement Claims: What Actually Changed and What Didn't",
+    "slug": "ftc-2021-covid-supplement-crackdown",
+    "meta_description": "Dr. James Holloway breaks down the FTC's 2021 supplement enforcement wave targeting COVID-19 cure claims and what it means for the industry.",
+    "date": "March 18, 2021",
+    "date_iso": "2021-03-18",
+    "author": "Dr. James Holloway",
+    "image": "https://images.pexels.com/photos/5723612/pexels-photo-5723612.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "ftc.gov",
+      "bmj.com"
+    ],
+    "posted_iso": "2026-06-07",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
