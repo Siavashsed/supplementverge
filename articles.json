@@ -239,5 +239,25 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "FDA Sent 12 Warning Letters in One Month. The Supplement Industry Finally Noticed.",
+    "slug": "fda-2019-warning-letters-supplement-industry",
+    "meta_description": "In 2019, the FDA's warning letter surge shook the supplement industry. Dr. James Holloway breaks down what it meant and what changed.",
+    "date": "August 09, 2019",
+    "date_iso": "2019-08-09",
+    "author": "Dr. James Holloway",
+    "image": "https://images.pexels.com/photos/3652097/pexels-photo-3652097.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "fda.gov",
+      "ncbi.nlm.nih.gov",
+      "grandviewresearch.com",
+      "jamanetwork.com"
+    ],
+    "posted_iso": "2026-06-09",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
