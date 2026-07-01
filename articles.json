@@ -259,5 +259,46 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "July 2026's 7 Hottest Supplements: Ranked, Reviewed, No Hype",
+    "slug": "top-7-supplements-july-2026",
+    "meta_description": "Dr. James Holloway ranks July 2026's top 7 trending supplements with real science, honest trade-offs, and zero marketing fluff.",
+    "date": "July 01, 2026",
+    "date_iso": "2026-07-01",
+    "author": "Dr. James Holloway",
+    "image": "https://images.pexels.com/photos/4047109/pexels-photo-4047109.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "ncbi.nlm.nih.gov",
+      "precisionhydration.com",
+      "momentousbrand.com",
+      "throrne.com",
+      "nutricost.com",
+      "drinkag1.com"
+    ],
+    "posted_iso": "2026-07-01",
+    "category": "Top Finds",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "NAC Got Pulled From Amazon in 2021. The FDA's Logic Still Doesn't Hold Up.",
+    "slug": "nac-fda-supplement-exclusion-2021",
+    "meta_description": "The FDA's 2021 move to exclude NAC from dietary supplements shook the industry. Here's what actually happened and why it still matters.",
+    "date": "February 11, 2021",
+    "date_iso": "2021-02-11",
+    "author": "Dr. James Holloway",
+    "image": "https://images.pexels.com/photos/15837850/pexels-photo-15837850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "naturalproductsinsider.com",
+      "ncbi.nlm.nih.gov",
+      "nih.gov"
+    ],
+    "posted_iso": "2026-07-01",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
