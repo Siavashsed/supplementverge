@@ -300,5 +300,44 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "This Week's Top 7 Supplements: What Actually Earned a Spot",
+    "slug": "top-7-supplements-july-13-2026",
+    "meta_description": "A sports scientist ranks the 7 trending supplements worth knowing about right now, what the data says, and who each one is actually for.",
+    "date": "July 13, 2026",
+    "date_iso": "2026-07-13",
+    "author": "Dr. James Holloway",
+    "image": "https://images.pexels.com/photos/6074943/pexels-photo-6074943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "nature.com",
+      "science.org",
+      "ods.od.nih.gov"
+    ],
+    "posted_iso": "2026-07-13",
+    "category": "Top Finds",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "Amazon Just Pulled NAC Off Its Shelves, and the FDA Started It",
+    "slug": "amazon-nac-removal-fda-2021",
+    "meta_description": "In 2021 Amazon yanked NAC supplements after the FDA called it a drug, not a supplement. Here's what actually happened and why the science barely came up.",
+    "date": "October 12, 2021",
+    "date_iso": "2021-10-12",
+    "author": "Dr. James Holloway",
+    "image": "https://images.pexels.com/photos/7615460/pexels-photo-7615460.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "fda.gov",
+      "crnusa.org",
+      "nutraingredients-usa.com",
+      "pubmed.ncbi.nlm.nih.gov"
+    ],
+    "posted_iso": "2026-07-13",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
