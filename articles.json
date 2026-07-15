@@ -339,5 +339,22 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "L-Theanine and Caffeine: What the Trials Actually Show",
+    "slug": "l-theanine-caffeine-focus-evidence",
+    "meta_description": "A sports scientist reviews the real evidence on the L-theanine caffeine stack for focus, dosing, and what the marketing gets wrong.",
+    "date": "July 15, 2026",
+    "date_iso": "2026-07-15",
+    "author": "Dr. James Holloway",
+    "image": "https://images.pexels.com/photos/11219480/pexels-photo-11219480.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "pubmed.ncbi.nlm.nih.gov",
+      "jissn.biomedcentral.com"
+    ],
+    "posted_iso": "2026-07-15",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
