@@ -356,5 +356,24 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Most Probiotics Do Nothing. These Few Strains Actually Earn Their Price",
+    "slug": "probiotics-strains-real-clinical-backing",
+    "meta_description": "A sports scientist breaks down which probiotic strains have real clinical trials behind them for gut health, and which ones are marketing.",
+    "date": "July 17, 2026",
+    "date_iso": "2026-07-17",
+    "author": "Dr. James Holloway",
+    "image": "https://images.pexels.com/photos/17820734/pexels-photo-17820734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "ods.od.nih.gov",
+      "cochranelibrary.com",
+      "gastrojournal.org",
+      "cell.com"
+    ],
+    "posted_iso": "2026-07-17",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
