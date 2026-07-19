@@ -375,5 +375,25 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "The 7 Supplements Worth Your Money This Week, Ranked Without Mercy",
+    "slug": "weeks-top-7-supplements-ranked",
+    "meta_description": "A sports scientist ranks the week's 7 trending supplements by evidence per dollar, from creatine and urolithin A to greens powders. No hype, real studies.",
+    "date": "July 19, 2026",
+    "date_iso": "2026-07-19",
+    "author": "Dr. James Holloway",
+    "image": "https://images.pexels.com/photos/12192276/pexels-photo-12192276.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "jissn.biomedcentral.com",
+      "pubmed.ncbi.nlm.nih.gov",
+      "science.org",
+      "ods.od.nih.gov"
+    ],
+    "posted_iso": "2026-07-19",
+    "category": "Top Finds",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
