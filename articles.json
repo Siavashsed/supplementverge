@@ -395,5 +395,24 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Twenty-Two of 25 Melatonin Gummies Were Mislabeled. Nobody Blinked.",
+    "slug": "melatonin-gummies-mislabeled-jama-2023",
+    "meta_description": "A 2023 JAMA analysis found most melatonin gummies contained the wrong dose. Here is what the data showed and why the supplement industry shrugged.",
+    "date": "March 25, 2023",
+    "date_iso": "2023-03-25",
+    "author": "Dr. James Holloway",
+    "image": "https://images.pexels.com/photos/6436280/pexels-photo-6436280.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "jamanetwork.com",
+      "cdc.gov",
+      "pubmed.ncbi.nlm.nih.gov"
+    ],
+    "posted_iso": "2026-07-20",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
