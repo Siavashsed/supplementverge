@@ -238,7 +238,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Immune & General Health"
   },
   {
     "title": "FDA Sent 12 Warning Letters in One Month. The Supplement Industry Finally Noticed.",
@@ -258,7 +259,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Sleep & Recovery"
   },
   {
     "title": "July 2026's 7 Hottest Supplements: Ranked, Reviewed, No Hype",
@@ -299,7 +301,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Sleep & Recovery"
   },
   {
     "title": "This Week's Top 7 Supplements: What Actually Earned a Spot",
@@ -338,7 +341,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Sleep & Recovery"
   },
   {
     "title": "L-Theanine and Caffeine: What the Trials Actually Show",
@@ -355,7 +359,8 @@
     "posted_iso": "2026-07-15",
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Brain & Focus"
   },
   {
     "title": "Most Probiotics Do Nothing. These Few Strains Actually Earn Their Price",
@@ -374,7 +379,8 @@
     "posted_iso": "2026-07-17",
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Immune & General Health"
   },
   {
     "title": "The 7 Supplements Worth Your Money This Week, Ranked Without Mercy",
@@ -413,6 +419,7 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Sleep & Recovery"
   }
 ]
