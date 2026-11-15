@@ -421,5 +421,46 @@
       "en"
     ],
     "category": "Sleep & Recovery"
+  },
+  {
+    "title": "Seven Supplements Trending This November, Ranked by Actual Evidence",
+    "slug": "top-7-supplements-november-2026",
+    "meta_description": "A sports scientist ranks November 2026's trending supplements by clinical evidence: what works, what's hype, and who each one actually suits.",
+    "date": "November 15, 2026",
+    "date_iso": "2026-11-15",
+    "author": "Dr. James Holloway",
+    "image": "https://images.pexels.com/photos/7615562/pexels-photo-7615562.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "doi.org",
+      "nsfsport.com",
+      "ods.od.nih.gov"
+    ],
+    "posted_iso": "2026-11-15",
+    "category": "Top Finds",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "Vitamin D Became 2020's Pandemic Pill on 76 Patients of Evidence",
+    "slug": "vitamin-d-covid-2020-hype-evidence",
+    "meta_description": "Vitamin D was the supplement of 2020. A sports scientist explains what the COVID studies showed, what marketers claimed, and what you should do about it.",
+    "date": "April 01, 2020",
+    "date_iso": "2020-04-01",
+    "author": "Dr. James Holloway",
+    "image": "https://images.pexels.com/photos/35166623/pexels-photo-35166623.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "doi.org",
+      "jamanetwork.com",
+      "fda.gov",
+      "ods.od.nih.gov",
+      "qmul.ac.uk",
+      "nice.org.uk"
+    ],
+    "posted_iso": "2026-11-15",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
