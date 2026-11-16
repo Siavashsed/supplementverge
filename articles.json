@@ -462,5 +462,24 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Your 1,000 IU Vitamin D Pill Probably Isn't Moving Your Blood Level",
+    "slug": "vitamin-d-dose-blood-test-first",
+    "meta_description": "Most people guess their vitamin D dose from a label. A sports scientist explains why your blood level, weight and absorption should set the number.",
+    "date": "November 16, 2026",
+    "date_iso": "2026-11-16",
+    "author": "Dr. James Holloway",
+    "image": "https://images.pexels.com/photos/4047110/pexels-photo-4047110.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "ods.od.nih.gov",
+      "pubmed.ncbi.nlm.nih.gov",
+      "nejm.org",
+      "academic.oup.com"
+    ],
+    "posted_iso": "2026-11-16",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
