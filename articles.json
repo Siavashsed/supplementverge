@@ -498,5 +498,26 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Most Sleep Supplements Fail the Evidence Test. Two Barely Pass.",
+    "slug": "sleep-supplements-ranked-by-evidence-quality",
+    "meta_description": "Sleep supplements ranked by evidence quality, from a sports scientist. Melatonin and magnesium earn a place, most blends don't. See what the trials show.",
+    "date": "November 18, 2026",
+    "date_iso": "2026-11-18",
+    "author": "Dr. James Holloway",
+    "image": "https://images.pexels.com/photos/7279117/pexels-photo-7279117.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "jcsm.aasm.org",
+      "journals.plos.org",
+      "jamanetwork.com",
+      "bmccomplementmedtherapies.biomedcentral.com",
+      "jstage.jst.go.jp",
+      "nccih.nih.gov"
+    ],
+    "posted_iso": "2026-11-18",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
