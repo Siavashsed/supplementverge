@@ -536,5 +536,24 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "The Competitive Athlete's Supplement Stack Is Shorter Than Your Cabinet",
+    "slug": "competitive-athlete-supplement-stack",
+    "meta_description": "A sports scientist on the supplement stack a competitive athlete actually uses: four evidence-backed items, one real contamination risk, and what to cut.",
+    "date": "November 20, 2026",
+    "date_iso": "2026-11-20",
+    "author": "Dr. James Holloway",
+    "image": "https://images.pexels.com/photos/7615571/pexels-photo-7615571.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "bjsm.bmj.com",
+      "jissn.biomedcentral.com",
+      "pubmed.ncbi.nlm.nih.gov",
+      "sport.wetestyoutrust.com"
+    ],
+    "posted_iso": "2026-11-20",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
