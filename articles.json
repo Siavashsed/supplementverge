@@ -576,5 +576,44 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Two Third-Party Seals Decide Which Protein Powder Survives Testing",
+    "slug": "protein-powder-third-party-testing",
+    "meta_description": "Most protein powder labels mean little. Two batch-testing seals hold up under scrutiny, and here's what independent testing found in the rest.",
+    "date": "November 22, 2026",
+    "date_iso": "2026-11-22",
+    "author": "Dr. James Holloway",
+    "image": "https://images.pexels.com/photos/8952815/pexels-photo-8952815.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "nsfsport.com",
+      "sport.wetestyoutrust.com",
+      "cleanlabelproject.org",
+      "consumerreports.org",
+      "pubmed.ncbi.nlm.nih.gov"
+    ],
+    "posted_iso": "2026-11-22",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "Vitamin D and COVID-19: The Hype Outran the Evidence in 2020",
+    "slug": "vitamin-d-covid-19-2020-hype-evidence",
+    "meta_description": "In 2020 vitamin D became the pandemic's favorite supplement. A sports scientist weighs the Cordoba pilot, the older trials and the marketing noise.",
+    "date": "June 10, 2020",
+    "date_iso": "2020-06-10",
+    "author": "Dr. James Holloway",
+    "image": "https://images.pexels.com/photos/7615569/pexels-photo-7615569.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "pubmed.ncbi.nlm.nih.gov",
+      "bmj.com",
+      "ods.od.nih.gov"
+    ],
+    "posted_iso": "2026-11-22",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
