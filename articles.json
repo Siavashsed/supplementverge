@@ -615,5 +615,24 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Caffeine for Athletes: 3 mg/kg Beats the Mega-Dose Myth",
+    "slug": "caffeine-athletes-optimal-dose-timing",
+    "meta_description": "Caffeine for athletes works at 3 to 6 mg/kg about an hour before you start. Here's what the dose, timing and tolerance evidence really says.",
+    "date": "November 23, 2026",
+    "date_iso": "2026-11-23",
+    "author": "Dr. James Holloway",
+    "image": "https://images.pexels.com/photos/7648073/pexels-photo-7648073.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "jissn.biomedcentral.com",
+      "bjsm.bmj.com",
+      "efsa.europa.eu",
+      "jcsm.aasm.org"
+    ],
+    "posted_iso": "2026-11-23",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
