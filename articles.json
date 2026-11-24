@@ -634,5 +634,23 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Caffeine for Athletes: Most of You Are Taking Too Much, Too Early",
+    "slug": "caffeine-athletes-dose-timing-tolerance",
+    "meta_description": "Caffeine for athletes works at 3 to 6 mg/kg about an hour out. Here's what the evidence says on dose, timing, and tolerance.",
+    "date": "November 24, 2026",
+    "date_iso": "2026-11-24",
+    "author": "Dr. James Holloway",
+    "image": "https://images.pexels.com/photos/10039565/pexels-photo-10039565.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "bjsm.bmj.com",
+      "jissn.biomedcentral.com",
+      "fda.gov"
+    ],
+    "posted_iso": "2026-11-24",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
