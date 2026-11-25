@@ -652,5 +652,23 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Omega-3 for Recovery: EPA Gets the Hype, DHA Gets Ignored",
+    "slug": "omega-3-epa-vs-dha-recovery",
+    "meta_description": "Omega-3 EPA vs DHA for recovery: what the trials show, what the labels hide, and the dose I'd actually use. A sports scientist's blunt read of the evidence.",
+    "date": "November 25, 2026",
+    "date_iso": "2026-11-25",
+    "author": "Dr. James Holloway",
+    "image": "https://images.pexels.com/photos/7526053/pexels-photo-7526053.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "ods.od.nih.gov",
+      "nejm.org",
+      "jssm.org"
+    ],
+    "posted_iso": "2026-11-25",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
