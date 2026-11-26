@@ -670,5 +670,22 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Collagen Peptides for Tendons: What 24 Weeks of Data Shows",
+    "slug": "collagen-peptides-joint-tendon-evidence",
+    "meta_description": "Do collagen peptides help joints and tendons? A sports scientist weighs the trials, the dose and timing that matter, and the marketing that doesn't.",
+    "date": "November 26, 2026",
+    "date_iso": "2026-11-26",
+    "author": "Dr. Aki Maeda",
+    "image": "https://images.pexels.com/photos/6539861/pexels-photo-6539861.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "pubmed.ncbi.nlm.nih.gov",
+      "doi.org"
+    ],
+    "posted_iso": "2026-11-26",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
