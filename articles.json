@@ -707,5 +707,23 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Probiotic Strains With Real Human Evidence Fit on One Hand",
+    "slug": "probiotic-strains-human-evidence-gut-immunity",
+    "meta_description": "Which probiotic strains have human trial evidence for gut health and immunity, and which claims are marketing. A skeptical read of the clinical data.",
+    "date": "November 28, 2026",
+    "date_iso": "2026-11-28",
+    "author": "Dr. Aki Maeda",
+    "image": "https://images.pexels.com/photos/6823321/pexels-photo-6823321.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "nccih.nih.gov",
+      "cochranelibrary.com",
+      "cell.com"
+    ],
+    "posted_iso": "2026-11-28",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
